@@ -7,17 +7,17 @@ website:
   navbar:
     left:
       - href: spending.qmd
-        text: Uitgaven
+        text: Spending
       - sidebar:targeting
       - href: about.qmd
-        text: Achtergrond
+        text: About
     right:
       - icon: github
         href: https://github.com/favstats/IN2023
   sidebar:
     - id: ""
     - id: targeting
-      title: "Focuspunten"
+      title: "Targeting"
       style: "docked"
       collapse-level: 2
       contents:
