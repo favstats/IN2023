@@ -1,0 +1,40 @@
+project:
+  type: website
+  output-dir: ../docs
+
+website:
+  title: "2023 Indian Elections Dashboard"
+  navbar:
+    left:
+      - href: spending.qmd
+        text: Uitgaven
+      - sidebar:targeting
+      - href: about.qmd
+        text: Achtergrond
+    right:
+      - icon: github
+        href: https://github.com/favstats/IN2023
+  sidebar:
+    - id: ""
+    - id: targeting
+      title: "Focuspunten"
+      style: "docked"
+      collapse-level: 2
+      contents:
+        - targeting.qmd
+        - detailed.qmd
+        - location.qmd
+        - demographics.qmd
+
+format:
+  html:
+    theme:
+      - cosmo
+      - custom.scss
+    mainfont: acumin-pro-semi-condensed, helvetica, arial, sans-serif
+    fontsize: 1.2em
+    include-in-header:
+      - text: |
+          <link rel="stylesheet" href="https://cloud.typenetwork.com/projects/881/fontface.css/" media="all">
+          <link rel="stylesheet" href="https://use.typekit.net/kdh6fyk.css" media="all">
+      - file: analytics.html
