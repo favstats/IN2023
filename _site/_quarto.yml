@@ -33,8 +33,3 @@ format:
       - custom.scss
     mainfont: acumin-pro-semi-condensed, helvetica, arial, sans-serif
     fontsize: 1.2em
-    include-in-header:
-      - text: |
-          <link rel="stylesheet" href="https://cloud.typenetwork.com/projects/881/fontface.css/" media="all">
-          <link rel="stylesheet" href="https://use.typekit.net/kdh6fyk.css" media="all">
-      - file: analytics.html
