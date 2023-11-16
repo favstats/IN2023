@@ -1,6 +1,6 @@
 ---
-title: "Publieksgerichtheid"
-description-meta: "Hoe jagen politieke partijen op jouw stem, wat willen ze juist niet dat je ziet en hoeveel geld geven ze daaraan uit? In aanloop naar de Tweede Kamerverkiezingen monitoren we politieke microtargeting."
+title: "Detailed Targeting"
+description-meta: "How do political parties chase your vote, what do they want to keep hidden, and how much money do they spend on it? In the lead-up to the elections, we monitor political microtargeting."
 lang: nl
 format:
   html:
@@ -36,9 +36,9 @@ source("../party_utils.R")
 ```
 
 
-## De focusgroepen die het meest gebruikt werden
+## Top Targeted Audiences
 
-Van de gedetailleerde opties die Meta aanbiedt laat de onderstaande grafiek de meest *gebruikte* focusgroepen per partij zien. De ranglijst is gebaseerd op de uitgegeven bedragen. De meeste focusgroepen zijn gericht op interesses zoals ‘boeken’ of ‘politiek’.
+The chart below displays the most utilized targeting criteria by political parties on Meta, based on the amounts spent. The top focus groups predominantly target interests such as 'books' or 'politics.'
 
 
 
@@ -268,11 +268,10 @@ tags$div(class = "container", do.call(tags$div, rows))
 
 :::
 
-## De focusgroepen die het meest uitgesloten werden
+## Top Excluded Audiences
 
 
-Van de gedetailleerde opties die Meta aanbiedt laat de onderstaande grafiek de meest *uitgesloten* focusgroepen per partij zien. De ranglijst is gebaseerd op de uitgeven bedragen. De meeste focusgroepen zijn gericht op interesses zoals ‘boeken’ of ‘politiek’.
-
+Among the detailed options offered by Meta, the chart below shows the most excluded target audiences per party. The ranking is based on the amounts spent. Most focus groups are focused on interests such as 'books' or 'politics'.
 
 ::: {.panel-tabset}
 
@@ -436,10 +435,9 @@ tags$div(class = "container", do.call(tags$div, rows))
 
 :::
 
-## De focusgroepen waar het meest om geconcurreerd werd
+## Top Contested Audiences
 
-De onderstaande grafieken laten de focusgroepen zien waar het meest om gestreden wordt. Bijvoorbeeld de groepen waarin alle partijen grote bedragen investeren om kiezers te bereiken met dezelfde interesses.
-
+The charts below show the target audiences where most competition takes place. For example, the groups in which all parties invest large amounts to reach voters with the same interests.
 
 ::: {.panel-tabset}
 

@@ -1,7 +1,6 @@
 ---
-title: "Demografie"
-description-meta: "Hoe jagen politieke partijen op jouw stem, wat willen ze juist niet dat je ziet en hoeveel geld geven ze daaraan uit? In aanloop naar de Tweede Kamerverkiezingen monitoren we politieke microtargeting."
-lang: nl
+title: "Demographics"
+description-meta: "How do political parties chase your vote, what do they want to keep hidden, and how much money do they spend on it? In the lead-up to the elections, we monitor political microtargeting."
 format:
   html:
     toc: true
@@ -33,13 +32,14 @@ source("../party_utils.R")
 
 ```
 
-## Focusgroep op basis van leeftijd
+## Age Targeting
 
 
-Onderstaande grafieken laten zien hoe partijen verschillende leeftijdsgroepen als focusgroep gebruiken en hoeveel procent van het budget daaraan is uitgeven.
+The following graphs illustrate how parties use different age groups as focus groups and the percentage of the budget allocated to them.
 
 
-> NB verschillende focusgroepen kunnen overlappen, waardoor de uitkomst niet per se 100% is.
+
+> Note: targeting criteria may overlap, so the total may not necessarily be 100%.
 
 ::: panel-tabset
 
@@ -273,11 +273,11 @@ tags$div(class = "container", do.call(tags$div, rows))
 ```
 :::
 
-## Focusgroep op basis van gender
+## Gender Targeting
 
 De onderstaande grafieken laten zien hoe partijen gender als focusgroep gebruiken en welk percentage van het budget daaraan werd uitgegeven.
 
-> NB verschillende focusgroepen kunnen overlappen, waardoor de uitkomst niet per se 100% is.
+> Note: targeting criteria may overlap, so the total may not necessarily be 100%.
 
 ::: panel-tabset
 
@@ -453,12 +453,11 @@ tags$div(class = "container", do.call(tags$div, rows))
 ```
 :::
 
-## Focusgroep op basis van taal
+## Language Targeting
 
-De onderstaande grafieken laten zien hoe partijen verschillende talen als focusgroep gebruiken en welk perentage van het budget daaraan werd uitgegeven.
+The following graphs show how parties use different languages as focus groups and the percentage of the budget allocated to them.
 
-
-> NB verschillende focusgroepen kunnen overlappen, waardoor de uitkomst niet per se 100% is.
+> Note: targeting criteria may overlap, so the total may not necessarily be 100%.
 
 ::: panel-tabset
 ### `r last30days_string`
@@ -630,12 +629,11 @@ tags$div(class = "container", do.call(tags$div, rows))
 ```
 :::
 
-## Focusgroep op basis van baansector en soort onderwijs
+## Targeting based on Employment or Education Instituation
 
-De onderstaande grafieken laten zien hoe partijen verschillende baansectoren en soorten onderwijs gebruiken als focusgroep en hoeveel procent van het budget daaraan werd uitgegeven. De volgende grafiek gaat over het onderwijsniveau.
+The following graphs depict how parties utilize various job sectors and types of education as focus groups and the percentage of the budget allocated to them. The next graph focuses on educational levels.
 
-
-> NB verschillende focusgroepen kunnen overlappen, waardoor de uitkomst niet per se 100% is.
+> Note: targeting criteria may overlap, so the total may not necessarily be 100%.
 
 ::: panel-tabset
 ### `r last30days_string`
@@ -879,11 +877,11 @@ tags$div(class = "container", do.call(tags$div, rows))
 ```
 :::
 
-## Focusgroep op basis van onderwijsniveau
+## Education Levels Targeting
 
-De onderstaande grafieken laten zien hoe partijen verschillende onderwijsniveaus als focusgroep gebruiken en hoeveel procent van het budget daaraan werd uitgegeven.
+The graphs below illustrate how parties target various education levels as focus groups and the percentage of the budget allocated to each.
 
-> NB verschillende focusgroepen kunnen overlappen, waardoor de uitkomst niet per se 100% is.
+> Note: targeting criteria may overlap, so the total may not necessarily be 100%.
 
 
 
@@ -1102,12 +1100,11 @@ tags$div(class = "container", do.call(tags$div, rows))
 ```
 :::
 
-## Focusgroep op basis van relatiestatus
+## Relationship Status Targeting
 
-De onderstaande grafieken laten zien hoe partijen relatiestatussen als focusgroep gebruiken en hoeveel procent van het budget daaraan werd uitgegeven.
+The following graphs reveal how political parties utilize different relationship statuses as focus groups and the percentage of the budget allocated to them.
 
-
-> NB verschillende focusgroepen kunnen overlappen, waardoor de uitkomst niet per se 100% is.
+> Note: targeting criteria may overlap, so the total may not necessarily be 100%.
 
 ::: panel-tabset
 ### `r last30days_string`

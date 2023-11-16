@@ -1,6 +1,6 @@
 ---
-title: Uitgaven
-description-meta: "Hoe jagen politieke partijen op jouw stem, wat willen ze juist niet dat je ziet en hoeveel geld geven ze daaraan uit? In aanloop naar de Tweede Kamerverkiezingen monitoren we politieke microtargeting."
+title: Spending
+description-meta: "How do political parties chase your vote, what do they want to keep hidden, and how much money do they spend on it? In the lead-up to the elections, we monitor political microtargeting."
 lang: nl
 ---
 
@@ -24,11 +24,11 @@ options(scipen = 999)
 # print(getwd())
 # here::here("")
 # prCint(getwd())
-hcoptslang <- getOption("highcharter.lang")
-
-hcoptslang$shortMonths <- c("Jan", "Feb", "Mrt", "Apr", "Mei", "Jun", "Jul", "Aug", "Sep", "Okt", "Nov", "Dec")
-
-options(highcharter.lang = hcoptslang)
+# hcoptslang <- getOption("highcharter.lang")
+# 
+# hcoptslang$shortMonths <- c("Jan", "Feb", "Mrt", "Apr", "Mei", "Jun", "Jul", "Aug", "Sep", "Okt", "Nov", "Dec")
+# 
+# options(highcharter.lang = hcoptslang)
 
 
 source("../utils.R")
@@ -108,22 +108,14 @@ add_ribbons3 <- function(x, adv, col) {
 }
 ```
 
-Hier zie je de *volledige* en *dagelijkse* uitgaven van politieke partijen in de aanloop naar de Tweede Kamerverkiezingen volgens de nieuwste data.
-
-
-
-::: {.panel-tabset}
-
-
-## <img src="img/meta.svg" height="24px"> Meta
+Here you can see the expenditures of political parties in the lead-up to the elections according to the latest data.
 
 
 ::: {.panel-tabset}
 
 ### `r last30days_string`
 
-In totaal gaven politieke partijen gedurende deze periode `r paste0(currency_symbol, scales::comma_format()(sum30$total_spend_formatted))` euro uit en toonden ze `r sum30$total_num_ads` advertenties op Meta.
-
+During this period, political parties spent a total of €`r paste0(currency_symbol, scales::comma_format()(sum30$total_spend_formatted))` and displayed `r sum30$total_num_ads` advertisements on Meta.
 
 
 
@@ -268,11 +260,11 @@ eval(parse(text = paste0("gt(the_table30, rowname_col = 'party_col') %>% fmt_mar
 
 ### `r last7days_string`
 
-In totaal gaven politieke partijen gedurende deze periode `r paste0(currency_symbol, scales::comma_format()(sum7$total_spend_formatted))` euro uit en toonden ze `r sum7$total_num_ads` advertenties op Meta.
+During this period, political parties spent a total of €`r paste0(currency_symbol, scales::comma_format()(sum7$total_spend_formatted))` and displayed `r sum7$total_num_ads` advertisements on Meta.
 
 
 
-```{r, eval = F}
+```{r, eval = T}
 
 the_table7 <- get_table_dat(election_dat7, party) %>%
   arrange(desc(parse_number(`Total Spend`)))

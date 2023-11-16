@@ -1,6 +1,6 @@
 ---
-title: "Uitgaven per Focusgroep"
-description-meta: "Hoe jagen politieke partijen op jouw stem, wat willen ze juist niet dat je ziet en hoeveel geld geven ze daaraan uit? In aanloop naar de Tweede Kamerverkiezingen monitoren we politieke microtargeting."
+title: "Spending per Targeting"
+description-meta: "How do political parties chase your vote, what do they want to keep hidden, and how much money do they spend on it? In the lead-up to the elections, we monitor political microtargeting."
 lang: nl
 format:
   html:
@@ -39,13 +39,13 @@ source("../party_utils.R")
 
 
 
-Deze grafieken laten zien op welke focusgroepen politieke partijen hun advertenties richten in aanloop naar de Tweede Kamerverkiezingen van 2023 volgens de nieuwste data. De focus ligt op de platformen van Meta (Facebook en Instagram) omdat deze de meest gedetailleerdere focusgroepen aanbieden voor politieke advertenties.
+These charts show the focus groups that political parties target with their advertisements leading up to the elections, according to the latest data. The focus is on Meta's platforms (Facebook and Instagram) because they offer the most detailed targeting options for political advertisements.
+
+How much did the campaigns of political parties spend on different focus groups? The charts below show both the total and the expenditures per party.
+
+> Note: Different targeting criteria may overlap, so the outcome may not necessarily add up to 100%.
 
 
-
-Hoeveel spendeerden de campagnes van politieke partijen aan de verschillende focusgroepen? Onderstaande grafieken tonen zowel het totaal als de uitgaven per partij.
-
-> NB verschillende focusgroepen kunnen overlappen, waardoor de uitkomst niet per se 100% is.
 
 ::: {.panel-tabset}
 
