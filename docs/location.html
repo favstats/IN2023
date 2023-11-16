@@ -8,7 +8,7 @@
 
 <meta name="description" content="Hoe jagen politieke partijen op jouw stem, wat willen ze juist niet dat je ziet en hoeveel geld geven ze daaraan uit? In aanloop naar de Tweede Kamerverkiezingen monitoren we politieke microtargeting.">
 
-<title>De Campagnemonitor 2023 - Locatie</title>
+<title>2023 Indian Elections Dashboard - Locatie</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -26,8 +26,11 @@ ul.task-list li input[type="checkbox"] {
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
 <script src="site_libs/quarto-nav/headroom.min.js"></script>
-<link href="./https://www.groene.nl/favicon.ico" rel="icon">
 <script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -38,6 +41,12 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
   "language": {
     "search-no-results-text": "Geen resultaten",
     "search-matching-documents-text": "Gevonden documenten",
@@ -51,28 +60,6 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Zoeken"
   }
 }</script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  window.dataLayer.push({originalLocation: document.location.protocol + '//' + document.location.hostname + document.location.pathname + document.location.search});
-
-  (function(w,d,s,l,i){
-    w[l]=w[l]||[];w[l].push({"gtm.start":new Date().getTime(),event:"gtm.js"});
-    var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!="dataLayer"?"&l="+l:"";
-    j.async=true;j.src="https://metrics.groene.nl/gtm.js?id="+i+dl;
-    f.parentNode.insertBefore(j,f);
-  })(window,document,"script","dataLayer","GTM-NSQ2QJN");
-
-  document.addEventListener("turbo:load", function(event) {
-    window.dataLayer.push({
-      "event": "virtualPageview",
-      "pageUrl": event.detail.url,
-      "pagePath": location.href.replace(location.origin, ""),
-      "pageTitle": document.title,
-    });
-  });
-</script>
-<link rel="stylesheet" href="https://cloud.typenetwork.com/projects/881/fontface.css/" media="all">
-<link rel="stylesheet" href="https://use.typekit.net/kdh6fyk.css" media="all">
 
 
 </head>
@@ -84,31 +71,25 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg navbar-dark ">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container">
-    <a href="./index.html" class="navbar-brand navbar-brand-logo">
-    <img src="https://www.groene.nl/512.png" alt="" class="navbar-logo">
-    </a>
     <a class="navbar-brand" href="./index.html">
-    <span class="navbar-title">De Campagnemonitor 2023</span>
+    <span class="navbar-title">2023 Indian Elections Dashboard</span>
     </a>
   </div>
+            <div id="quarto-search" class="" title="Zoeken"></div>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Schakel tussen navigatie" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./index.html" rel="" target="">
- <span class="menu-text">Blog</span></a>
-  </li>  
-  <li class="nav-item">
     <a class="nav-link" href="./spending.html" rel="" target="">
- <span class="menu-text">Uitgaven</span></a>
+ <span class="menu-text">Spending</span></a>
   </li>  
   <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-focuspunten" role="button" data-bs-toggle="dropdown" aria-expanded="false" rel="" target="">
- <span class="menu-text">Focuspunten</span>
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-targeting" role="button" data-bs-toggle="dropdown" aria-expanded="false" rel="" target="">
+ <span class="menu-text">Targeting</span>
     </a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-focuspunten">    
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-targeting">    
         <li>
     <a class="dropdown-item" href="./targeting.html" rel="" target="">
  <span class="dropdown-text">Uitgaven per Focusgroep</span></a>
@@ -129,16 +110,12 @@ ul.task-list li input[type="checkbox"] {
   </li>
   <li class="nav-item">
     <a class="nav-link" href="./about.html" rel="" target="">
- <span class="menu-text">Achtergrond</span></a>
+ <span class="menu-text">About</span></a>
   </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
-  <li class="nav-item">
-    <a class="nav-link" href="https://www.groene.nl/" rel="" target="">
- <span class="menu-text">groene.nl</span></a>
-  </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="https://github.com/groene/TK2023" rel="" target=""><i class="bi bi-github" role="img">
+    <a class="nav-link" href="https://github.com/favstats/IN2023" rel="" target=""><i class="bi bi-github" role="img">
 </i> 
  <span class="menu-text"></span></a>
   </li>  
