@@ -115,7 +115,7 @@ Here you can see the expenditures of political parties in the lead-up to the ele
 
 ### `r last30days_string`
 
-During this period, political parties spent a total of €`r paste0(currency_symbol, scales::comma_format()(sum30$total_spend_formatted))` and displayed `r sum30$total_num_ads` advertisements on Meta.
+During this period, political parties spent a total of `r paste0(currency_symbol, scales::comma_format()(sum30$total_spend_formatted))` and displayed `r sum30$total_num_ads` advertisements on Meta.
 
 
 
@@ -260,7 +260,7 @@ eval(parse(text = paste0("gt(the_table30, rowname_col = 'party_col') %>% fmt_mar
 
 ### `r last7days_string`
 
-During this period, political parties spent a total of €`r paste0(currency_symbol, scales::comma_format()(sum7$total_spend_formatted))` and displayed `r sum7$total_num_ads` advertisements on Meta.
+During this period, political parties spent a total of `r paste0(currency_symbol, scales::comma_format()(sum7$total_spend_formatted))` and displayed `r sum7$total_num_ads` advertisements on Meta.
 
 
 
