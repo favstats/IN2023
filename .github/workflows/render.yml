@@ -25,6 +25,7 @@ jobs:
       - name: Apt-get needed things
         run: |
           sudo apt-get install --no-install-recommends -y \
+          libpoppler-dev \
           libssl-dev \
           libcurl4-openssl-dev \
           libxml2-dev \
