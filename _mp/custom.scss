@@ -1,98 +1,84 @@
-/*-- scss:defaults --*/
-$body-color: #333; // Softer body color for modern look
-$navbar-bg: #f8f9fa; // Lighter navbar background
-$navbar-hl: #007bff; // Vibrant highlight color
-$link-color: #007bff; // Matching link color
-$link-hover-color: #0056b3; // Darker hover color
-$nav-tabs-link-active-color: #495057; // Subtle active tab color
+/* Define Colors */
+$primary-color: #005b96; // A nice shade of blue
+$secondary-color: #f0f0f0; // A light grey for backgrounds
+$accent-color: #ffc107; // An accent color for highlighting important info
 
-/*-- scss:rules --*/
+/* Typography */
+$font-stack: 'Segoe UI', 'Roboto', sans-serif;
+$font-stack-headings: 'Roboto Condensed', sans-serif;
+
 body {
-  background-color: $body-color;
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; // Modern and readable font
+  background-color: $secondary-color;
+  color: #333;
+  font-family: $font-stack;
+  line-height: 1.6;
 }
 
-.navbar {
-  background-color: $navbar-bg;
-  border-bottom: 2px solid lighten($navbar-hl, 20%);
+h1, h2, h3, h4 {
+  font-family: $font-stack-headings;
+  color: $primary-color;
+}
+
+/* Spacing and Alignment */
+.container, .container-fluid {
+  padding: 2rem;
+}
+
+.row {
+  margin: 0 -15px;
+}
+
+.col, .col-6, .col-12 {
+  padding: 0 15px;
+  margin-bottom: 1rem;
+}
+
+/* Cards */
+.card {
+  background: #fff;
+  border: 1px solid $secondary-color;
+  border-radius: 0.25rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  margin-bottom: 2rem;
+  padding: 1rem;
+  h3 {
+    border-bottom: 2px solid $primary-color;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+  }
+}
+
+/* Consistent UI elements */
+button, .btn {
+  background-color: $primary-color;
+  border: none;
+  border-radius: 0.25rem;
+  color: #fff;
   padding: 0.5rem 1rem;
-  transition: background-color 0.3s ease-in-out;
-
-  &.scrolled {
-    background-color: darken($navbar-bg, 10%);
-  }
-}
-
-.navbar-logo {
-  max-height: 50px;
-  height: 50px;
-  border-radius: 100%;
-  transition: transform 0.3s ease-in-out;
-
   &:hover {
-    transform: scale(1.05);
+    background-color: darken($primary-color, 10%);
   }
 }
 
-h1, h2, h3 {
-  font-family: 'Roboto', sans-serif; // Stylish and clear font
-  color: darken($navbar-hl, 10%);
-}
-
-h1 { font-size: 2rem; }
-h2 { font-size: 1.6rem; }
-h3 { font-size: 1.4rem; }
-
-.sidebar-item-container {
-  .sidebar-link {
-    color: darken($navbar-bg, 30%);
-    transition: color 0.3s ease-in-out;
-
-    &:hover, &.active {
-      color: $navbar-hl;
-    }
-  }
-}
-
-.panel-tabset .nav-link {
-  font-size: 1rem;
-  color: darken($link-color, 20%);
-  transition: color 0.3s;
-
+.nav-tabs .nav-item .nav-link {
+  border: 1px solid transparent;
+  border-radius: 0.25rem 0.25rem 0 0;
   &:hover {
-    color: $link-hover-color;
+    border-color: $secondary-color;
+  }
+  &.active {
+    background-color: $accent-color;
+    border-color: $secondary-color;
+    color: #fff;
   }
 }
 
-.gt_table {
-  a {
-    color: $link-color;
-    text-decoration: none;
-    transition: color 0.3s ease-in-out;
-
-    &:hover {
-      color: $link-hover-color;
-      text-decoration: underline;
-    }
-  }
-}
-
-.quarto-title-block {
-  div.description {
-    font-family: 'Arial', sans-serif;
-    font-size: 20px;
-    font-weight: 400;
-    color: darken($body-color, 20%);
-  }
-}
-
+/* Responsiveness */
 @media (max-width: 768px) {
   .navbar {
-    padding: 0.4rem 0.8rem;
+    padding: 0.5rem;
   }
-
-  h1 { font-size: 1.6rem; }
-  h2 { font-size: 1.3rem; }
+  .container, .container-fluid {
+    padding: 1rem;
+  }
 }
-
-/* Additional custom styles can be added here */
