@@ -1,0 +1,98 @@
+/*-- scss:defaults --*/
+$body-color: #333; // Softer body color for modern look
+$navbar-bg: #f8f9fa; // Lighter navbar background
+$navbar-hl: #007bff; // Vibrant highlight color
+$link-color: #007bff; // Matching link color
+$link-hover-color: #0056b3; // Darker hover color
+$nav-tabs-link-active-color: #495057; // Subtle active tab color
+
+/*-- scss:rules --*/
+body {
+  background-color: $body-color;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; // Modern and readable font
+}
+
+.navbar {
+  background-color: $navbar-bg;
+  border-bottom: 2px solid lighten($navbar-hl, 20%);
+  padding: 0.5rem 1rem;
+  transition: background-color 0.3s ease-in-out;
+
+  &.scrolled {
+    background-color: darken($navbar-bg, 10%);
+  }
+}
+
+.navbar-logo {
+  max-height: 50px;
+  height: 50px;
+  border-radius: 100%;
+  transition: transform 0.3s ease-in-out;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+}
+
+h1, h2, h3 {
+  font-family: 'Roboto', sans-serif; // Stylish and clear font
+  color: darken($navbar-hl, 10%);
+}
+
+h1 { font-size: 2rem; }
+h2 { font-size: 1.6rem; }
+h3 { font-size: 1.4rem; }
+
+.sidebar-item-container {
+  .sidebar-link {
+    color: darken($navbar-bg, 30%);
+    transition: color 0.3s ease-in-out;
+
+    &:hover, &.active {
+      color: $navbar-hl;
+    }
+  }
+}
+
+.panel-tabset .nav-link {
+  font-size: 1rem;
+  color: darken($link-color, 20%);
+  transition: color 0.3s;
+
+  &:hover {
+    color: $link-hover-color;
+  }
+}
+
+.gt_table {
+  a {
+    color: $link-color;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+
+    &:hover {
+      color: $link-hover-color;
+      text-decoration: underline;
+    }
+  }
+}
+
+.quarto-title-block {
+  div.description {
+    font-family: 'Arial', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    color: darken($body-color, 20%);
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    padding: 0.4rem 0.8rem;
+  }
+
+  h1 { font-size: 1.6rem; }
+  h2 { font-size: 1.3rem; }
+}
+
+/* Additional custom styles can be added here */
