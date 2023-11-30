@@ -1,84 +1,87 @@
-/* Define Colors */
-$primary-color: #005b96; // A nice shade of blue
-$secondary-color: #f0f0f0; // A light grey for backgrounds
-$accent-color: #ffc107; // An accent color for highlighting important info
+/*-- scss:defaults --*/
+$body-color: #000;
+$navbar-bg: #fff;
+$navbar-hl: #256f6c; // Updated to a blue-greenish tone
+$link-color: #256f6c; // Updated to match navbar highlight
+$link-hover-color: #256f6c; // Darker shade for hover
+$nav-tabs-link-active-color: #000;
 
-/* Typography */
-$font-stack: 'Segoe UI', 'Roboto', sans-serif;
-$font-stack-headings: 'Roboto Condensed', sans-serif;
-
-body {
-  background-color: $secondary-color;
-  color: #333;
-  font-family: $font-stack;
-  line-height: 1.6;
+/*-- scss:rules --*/
+table {
+  font-family: acumin-pro-semi-condensed, helvetica, arial, sans-serif !important;
+  border-collapse: separate;
+  border-spacing: 0 10px; // Spacing for a smoother look
 }
 
-h1, h2, h3, h4 {
-  font-family: $font-stack-headings;
-  color: $primary-color;
+.navbar {
+  border-bottom: 3px solid $navbar-hl; // Thicker and colored border for a modern touch
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1); // Adding subtle shadow for depth
 }
 
-/* Spacing and Alignment */
-.container, .container-fluid {
-  padding: 2rem;
+.navbar-logo {
+  max-height: 50px;
+  height: 50px;
+  border-radius: 100%;
 }
 
-.row {
-  margin: 0 -15px;
+h1, h2, h3 {
+  font-family: "Miller Text", georgia, serif;
 }
 
-.col, .col-6, .col-12 {
-  padding: 0 15px;
-  margin-bottom: 1rem;
+h1 {
+  font-size: 2rem; // Slightly larger for prominence
+  color: $navbar-hl; // Color for consistency
 }
 
-/* Cards */
-.card {
-  background: #fff;
-  border: 1px solid $secondary-color;
-  border-radius: 0.25rem;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-  margin-bottom: 2rem;
-  padding: 1rem;
-  h3 {
-    border-bottom: 2px solid $primary-color;
-    padding-bottom: 0.5rem;
-    margin-bottom: 1rem;
-  }
+h2 {
+  font-size: 1.6rem; // Slightly larger for readability
+  color: $link-color; // Ensuring color consistency
 }
 
-/* Consistent UI elements */
-button, .btn {
-  background-color: $primary-color;
-  border: none;
-  border-radius: 0.25rem;
-  color: #fff;
-  padding: 0.5rem 1rem;
-  &:hover {
-    background-color: darken($primary-color, 10%);
-  }
+div.sidebar-item-container .active {
+  color: $navbar-hl; // Consistent highlight color
+  font-weight: bold; // Making active items stand out
 }
 
-.nav-tabs .nav-item .nav-link {
-  border: 1px solid transparent;
-  border-radius: 0.25rem 0.25rem 0 0;
-  &:hover {
-    border-color: $secondary-color;
-  }
-  &.active {
-    background-color: $accent-color;
-    border-color: $secondary-color;
-    color: #fff;
-  }
+div.sidebar-item-container .sidebar-link:hover {
+  color: $link-hover-color;
 }
 
-/* Responsiveness */
-@media (max-width: 768px) {
-  .navbar {
-    padding: 0.5rem;
-  }
-  .container, .container-fluid {
-    padding: 1rem;
-  }
+.panel-tabset .nav-link {
+  font-size: 1rem; // Slightly larger for readability
+}
+
+.gt_table a {
+  color: $link-color;
+  text-decoration: none;
+  display: inline-block;
+  transition: 0.3s;
+}
+
+.gt_table a:hover {
+  color: $link-hover-color; // Consistent hover effect
+  text-decoration: underline;
+}
+
+.quarto-title-block div.description {
+  max-width: 72ch;
+  margin-bottom: 40px;
+  font-size: 21px;
+  font-weight: 500;
+  color: $navbar-hl; // Consistent color scheme
+}
+
+/* Additional modern touches */
+/*body {
+/*  background-color: #f2f7f6; // Keeping it light and modern
+/*  color: $body-color;
+/*}
+
+a {
+  transition: color 0.3s ease-in-out;
+}
+
+/* Smooth scroll behavior for a nicer feel */
+html {
+  scroll-behavior: smooth;
 }

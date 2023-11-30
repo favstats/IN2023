@@ -11,6 +11,8 @@ website:
       - sidebar:targeting
       - href: about.qmd
         text: About
+      - href: https://favstats.github.io/IN2023/mp/spending.html
+        text: Madhya Pradesh
     right:
       - icon: github
         href: https://github.com/favstats/IN2023
