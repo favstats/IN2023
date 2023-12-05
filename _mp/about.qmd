@@ -9,6 +9,7 @@ format:
 library(tidyverse)
 sets <- jsonlite::fromJSON("../settings.json")
 
+source("../party_utils_mp.R")
 
 ```
 
@@ -22,15 +23,13 @@ In collaboration with [Who Targets Me](https://whotargets.me/), we monitored `r 
 
 To better understand the election, we kept only advertisers who:
 
-1. Advertised in the last 7 days (`r read_csv("../data/lastdays.csv")$last7days`)
-2. Advertised in the last 30 days (`r read_csv("../data/lastdays.csv")$last30days`)
-
+1. Advertised in the last 7 days (`r last7days_string`)
+2. Advertised in the last 30 days (`r last30days_string`)
 
 ::: {.callout-note}
 Meta only provides 7, 30 and 90 days windows for the targeting data in their Ad Library. Meta's data also lags by a few days. Report will be updated as soon as new data is available.
 :::
 
-For Google platforms, data accessed via the [Google Transparency Report](https://transparencyreport.google.com/political-ads/region/NL) provides spending on how much money was spent by parties. In order to fit the Meta ranges, we also show the last seven and 30 days.
 
 
 ::: {.callout-caution}

@@ -45,7 +45,7 @@ election_dat7 <- election_dat7 %>%
 ## Age Targeting
 
 
-The following graphs illustrate how parties use different age groups as focus groups and the percentage of the budget allocated to them.
+The following graphs illustrate how parties target different age groups and the percentage of budgets allocated to them.
 
 
 

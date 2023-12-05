@@ -9,7 +9,7 @@ format:
 library(tidyverse)
 sets <- jsonlite::fromJSON("../settings.json")
 
-source("../party_utils.R")
+source("../party_utils_r.R")
 
 ```
 
@@ -29,9 +29,6 @@ To better understand the election, we kept only advertisers who:
 ::: {.callout-note}
 Meta only provides 7, 30 and 90 days windows for the targeting data in their Ad Library. Meta's data also lags by a few days. Report will be updated as soon as new data is available.
 :::
-
-For Google platforms, data accessed via the [Google Transparency Report](https://transparencyreport.google.com/political-ads/region/NL) provides spending on how much money was spent by parties. In order to fit the Meta ranges, we also show the last seven and 30 days.
-
 
 ::: {.callout-caution}
 ## Disclaimer

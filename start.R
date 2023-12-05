@@ -10,9 +10,9 @@ all_dat <- readRDS("data/all_dat.rds")
 write_lines(nrow(all_dat), file = "n_advertisers.txt")
 
 
-dir("_site", full.names = T) %>% keep(~str_detect(.x, "qmd")) %>% walk(quarto::quarto_render)
 dir("_rajasthan", full.names = T) %>% keep(~str_detect(.x, "qmd")) %>% walk(quarto::quarto_render)
 dir("_mp", full.names = T) %>% keep(~str_detect(.x, "qmd")) %>% walk(quarto::quarto_render)
+dir("_site", full.names = T) %>% keep(~str_detect(.x, "qmd")) %>% walk(quarto::quarto_render)
 
 
 knitr::knit("README.Rmd")

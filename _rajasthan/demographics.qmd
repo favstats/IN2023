@@ -28,7 +28,7 @@ pacman::p_load(knitr, tidyverse, rmarkdown, openxlsx, sf, shiny)
 
 
 source("../utils.R")
-source("../party_utils.R")
+source("../party_utils_r.R")
 
 rajahstan <- openxlsx::read.xlsx("../data/India Spend Reports - 90 days to Oct 23rd 2023.xlsx", sheet = 2) %>% 
   janitor::clean_names() %>% 

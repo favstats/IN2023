@@ -32,7 +32,7 @@ pacman::p_load(knitr, tidyverse, rmarkdown, openxlsx, sf, shiny)
 
 
 source("../utils.R")
-source("../party_utils.R")
+source("../party_utils_mp.R")
 
 
 mp <- openxlsx::read.xlsx("../data/India Spend Reports - 90 days to Oct 23rd 2023.xlsx", sheet = 3) %>% 
@@ -52,7 +52,7 @@ election_dat7 <- election_dat7 %>%
 
 These charts show the focus groups that political parties target with their advertisements leading up to the elections, according to the latest data. The focus is on Meta's platforms (Facebook and Instagram) because they offer the most detailed targeting options for political advertisements.
 
-How much did the campaigns of political parties spend on different focus groups? The charts below show both the total and the expenditures per party.
+How much did the campaigns of political parties spend on different target criteria? The charts below show both the total and the expenditures per party.
 
 > Note: Different targeting criteria may overlap, so the outcome may not necessarily add up to 100%.
 

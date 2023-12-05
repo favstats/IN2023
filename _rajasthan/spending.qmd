@@ -32,8 +32,7 @@ options(scipen = 999)
 
 
 source("../utils.R")
-source("../party_utils.R")
-
+source("../party_utils_r.R")
 
 total_spend_id <- election_dat30 %>%
     filter(main_currency == the_currency) %>%

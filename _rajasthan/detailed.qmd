@@ -32,7 +32,7 @@ pacman::p_load(knitr, tidyverse, rmarkdown, openxlsx, sf, shiny)
 
 source("../utils.R")
 
-source("../party_utils.R")
+source("../party_utils_r.R")
 
 rajahstan <- openxlsx::read.xlsx("../data/India Spend Reports - 90 days to Oct 23rd 2023.xlsx", sheet = 2) %>% 
   janitor::clean_names() %>% 
@@ -49,7 +49,7 @@ election_dat7 <- election_dat7 %>%
 
 ## Top Targeted Audiences
 
-The chart below displays the most utilized targeting criteria by political parties on Meta, based on the amounts spent. The top focus groups predominantly target interests such as 'books' or 'politics.'
+The chart below displays the most utilized targeting criteria by political parties on Meta, based on the amounts spent. The top targeting criteria predominantly use interests such as 'books' or 'politics.'
 
 
 
@@ -282,7 +282,7 @@ tags$div(class = "container", do.call(tags$div, rows))
 ## Top Excluded Audiences
 
 
-Among the detailed options offered by Meta, the chart below shows the most excluded target audiences per party. The ranking is based on the amounts spent. Most focus groups are focused on interests such as 'books' or 'politics'.
+Among the detailed options offered by Meta, the chart below shows the most excluded target audiences per party. The ranking is based on the amounts spent. Most exclusion criteria are focused on interests such as 'books' or 'politics'.
 
 ::: {.panel-tabset}
 
