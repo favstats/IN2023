@@ -48,13 +48,13 @@ scale_color_parties <- function(...){
 }
 
 
-election_dat30 <- readRDS("../historic/2023-11-26/30.rds") %>%
+election_dat30 <- readRDS("../historic/2023-11-19/30.rds") %>%
   # left_join(all_dat) %>%
   rename(internal_id = page_id) %>%
   filter(party != "And")  %>%
   filter(is.na(no_data)) 
 
-election_dat7 <- readRDS("../historic/2023-11-26/7.rds") %>%
+election_dat7 <- readRDS("../historic/2023-11-19/7.rds") %>%
   # left_join(all_dat) %>%
   rename(internal_id = page_id) %>%
   filter(party != "And")  %>%
