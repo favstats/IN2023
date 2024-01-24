@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="nl" xml:lang="nl"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.3.450">
+<meta name="generator" content="quarto-1.4.549">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -46,7 +46,13 @@ ul.task-list li input[type="checkbox"] {
   "collapse-after": 3,
   "panel-placement": "end",
   "type": "overlay",
-  "limit": 20,
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
   "language": {
     "search-no-results-text": "Geen resultaten",
     "search-matching-documents-text": "Gevonden documenten",
@@ -55,6 +61,7 @@ ul.task-list li input[type="checkbox"] {
     "search-more-match-text": "meer overeenkomst in dit document",
     "search-more-matches-text": "meer overeenkomsten in dit document",
     "search-clear-button-title": "Wissen",
+    "search-text-placeholder": "",
     "search-detached-cancel-button-title": "Annuleren",
     "search-submit-button-title": "Verzenden",
     "search-label": "Zoeken"
@@ -68,65 +75,65 @@ ul.task-list li input[type="checkbox"] {
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
-    <nav class="navbar navbar-expand-lg navbar-dark ">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
-      <div class="navbar-brand-container">
+      <div class="navbar-brand-container mx-auto">
     <a class="navbar-brand" href="./index.html">
     <span class="navbar-title">2023 Indian Elections Dashboard - Rajasthan</span>
     </a>
   </div>
             <div id="quarto-search" class="" title="Zoeken"></div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Schakel tussen navigatie" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Schakel navigatie" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./spending.html" rel="" target="" aria-current="page">
- <span class="menu-text">Spending</span></a>
+    <a class="nav-link active" href="./spending.html" aria-current="page"> 
+<span class="menu-text">Spending</span></a>
   </li>  
   <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-targeting" role="button" data-bs-toggle="dropdown" aria-expanded="false" rel="" target="">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-targeting" role="button" data-bs-toggle="dropdown" aria-expanded="false">
  <span class="menu-text">Targeting</span>
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-targeting">    
         <li>
-    <a class="dropdown-item" href="./targeting.html" rel="" target="">
+    <a class="dropdown-item" href="./targeting.html">
  <span class="dropdown-text">Spending per Targeting</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./detailed.html" rel="" target="">
+    <a class="dropdown-item" href="./detailed.html">
  <span class="dropdown-text">Detailed Targeting</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./location.html" rel="" target="">
+    <a class="dropdown-item" href="./location.html">
  <span class="dropdown-text">Location</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="./demographics.html" rel="" target="">
+    <a class="dropdown-item" href="./demographics.html">
  <span class="dropdown-text">Demographics</span></a>
   </li>  
     </ul>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="./about.html" rel="" target="">
- <span class="menu-text">About</span></a>
+    <a class="nav-link" href="./about.html"> 
+<span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="https://favstats.github.io/IN2023/mp/spending.html" rel="" target="">
- <span class="menu-text">Madhya Pradesh</span></a>
+    <a class="nav-link" href="https://favstats.github.io/IN2023/mp/spending.html"> 
+<span class="menu-text">Madhya Pradesh</span></a>
   </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item compact">
-    <a class="nav-link" href="https://github.com/favstats/IN2023" rel="" target=""><i class="bi bi-github" role="img">
+    <a class="nav-link" href="https://github.com/favstats/IN2023"> <i class="bi bi-github" role="img">
 </i> 
- <span class="menu-text"></span></a>
+<span class="menu-text"></span></a>
   </li>  
 </ul>
-            <div class="quarto-navbar-tools">
-</div>
           </div> <!-- /navcollapse -->
+          <div class="quarto-navbar-tools">
+</div>
       </div> <!-- /container-fluid -->
     </nav>
 </header>
@@ -153,7 +160,9 @@ ul.task-list li input[type="checkbox"] {
   </div>
   
 
+
 </header>
+
 
 <p>Here you can see the expenditures of political parties in the lead-up to the elections according to the latest data.</p>
 <div class="tabset-margin-container"></div><div class="panel-tabset">
@@ -163,28 +172,27 @@ ul.task-list li input[type="checkbox"] {
 <p>During this period, political parties spent a total of ₹14,470,083 and displayed 26401 advertisements on Meta.</p>
 <div class="cell">
 <div class="cell-output-display">
-
-<div id="cntrcsemap" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<div id="decgxkdcos" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
 <style>@import url("https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Cairo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-#cntrcsemap table {
+#decgxkdcos table {
   font-family: Cairo, system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#cntrcsemap thead, #cntrcsemap tbody, #cntrcsemap tfoot, #cntrcsemap tr, #cntrcsemap td, #cntrcsemap th {
+#decgxkdcos thead, #decgxkdcos tbody, #decgxkdcos tfoot, #decgxkdcos tr, #decgxkdcos td, #decgxkdcos th {
   border-style: none;
 }
 
-#cntrcsemap p {
+#decgxkdcos p {
   margin: 0;
   padding: 0;
 }
 
-#cntrcsemap .gt_table {
+#decgxkdcos .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -210,12 +218,12 @@ ul.task-list li input[type="checkbox"] {
   border-left-color: #D3D3D3;
 }
 
-#cntrcsemap .gt_caption {
+#decgxkdcos .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#cntrcsemap .gt_title {
+#decgxkdcos .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -227,7 +235,7 @@ ul.task-list li input[type="checkbox"] {
   border-bottom-width: 0;
 }
 
-#cntrcsemap .gt_subtitle {
+#decgxkdcos .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -239,7 +247,7 @@ ul.task-list li input[type="checkbox"] {
   border-top-width: 0;
 }
 
-#cntrcsemap .gt_heading {
+#decgxkdcos .gt_heading {
   background-color: #FFFFFF;
   text-align: left;
   border-bottom-color: #FFFFFF;
@@ -251,13 +259,13 @@ ul.task-list li input[type="checkbox"] {
   border-right-color: #D3D3D3;
 }
 
-#cntrcsemap .gt_bottom_border {
+#decgxkdcos .gt_bottom_border {
   border-bottom-style: none;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#cntrcsemap .gt_col_headings {
+#decgxkdcos .gt_col_headings {
   border-top-style: none;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -272,7 +280,7 @@ ul.task-list li input[type="checkbox"] {
   border-right-color: #D3D3D3;
 }
 
-#cntrcsemap .gt_col_heading {
+#decgxkdcos .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -292,7 +300,7 @@ ul.task-list li input[type="checkbox"] {
   overflow-x: hidden;
 }
 
-#cntrcsemap .gt_column_spanner_outer {
+#decgxkdcos .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -304,15 +312,15 @@ ul.task-list li input[type="checkbox"] {
   padding-right: 4px;
 }
 
-#cntrcsemap .gt_column_spanner_outer:first-child {
+#decgxkdcos .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#cntrcsemap .gt_column_spanner_outer:last-child {
+#decgxkdcos .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#cntrcsemap .gt_column_spanner {
+#decgxkdcos .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #000000;
@@ -324,11 +332,11 @@ ul.task-list li input[type="checkbox"] {
   width: 100%;
 }
 
-#cntrcsemap .gt_spanner_row {
+#decgxkdcos .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#cntrcsemap .gt_group_heading {
+#decgxkdcos .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -354,7 +362,7 @@ ul.task-list li input[type="checkbox"] {
   text-align: left;
 }
 
-#cntrcsemap .gt_empty_group_heading {
+#decgxkdcos .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -369,15 +377,15 @@ ul.task-list li input[type="checkbox"] {
   vertical-align: middle;
 }
 
-#cntrcsemap .gt_from_md > :first-child {
+#decgxkdcos .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#cntrcsemap .gt_from_md > :last-child {
+#decgxkdcos .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#cntrcsemap .gt_row {
+#decgxkdcos .gt_row {
   padding-top: 3px;
   padding-bottom: 3px;
   padding-left: 5px;
@@ -396,7 +404,7 @@ ul.task-list li input[type="checkbox"] {
   overflow-x: hidden;
 }
 
-#cntrcsemap .gt_stub {
+#decgxkdcos .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -409,7 +417,7 @@ ul.task-list li input[type="checkbox"] {
   padding-right: 5px;
 }
 
-#cntrcsemap .gt_stub_row_group {
+#decgxkdcos .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -423,15 +431,15 @@ ul.task-list li input[type="checkbox"] {
   vertical-align: top;
 }
 
-#cntrcsemap .gt_row_group_first td {
+#decgxkdcos .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#cntrcsemap .gt_row_group_first th {
+#decgxkdcos .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#cntrcsemap .gt_summary_row {
+#decgxkdcos .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -441,16 +449,16 @@ ul.task-list li input[type="checkbox"] {
   padding-right: 5px;
 }
 
-#cntrcsemap .gt_first_summary_row {
+#decgxkdcos .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#cntrcsemap .gt_first_summary_row.thick {
+#decgxkdcos .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#cntrcsemap .gt_last_summary_row {
+#decgxkdcos .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -460,7 +468,7 @@ ul.task-list li input[type="checkbox"] {
   border-bottom-color: #D3D3D3;
 }
 
-#cntrcsemap .gt_grand_summary_row {
+#decgxkdcos .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -470,7 +478,7 @@ ul.task-list li input[type="checkbox"] {
   padding-right: 5px;
 }
 
-#cntrcsemap .gt_first_grand_summary_row {
+#decgxkdcos .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -480,7 +488,7 @@ ul.task-list li input[type="checkbox"] {
   border-top-color: #D3D3D3;
 }
 
-#cntrcsemap .gt_last_grand_summary_row_top {
+#decgxkdcos .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -490,11 +498,11 @@ ul.task-list li input[type="checkbox"] {
   border-bottom-color: #D3D3D3;
 }
 
-#cntrcsemap .gt_striped {
+#decgxkdcos .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#cntrcsemap .gt_table_body {
+#decgxkdcos .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -503,7 +511,7 @@ ul.task-list li input[type="checkbox"] {
   border-bottom-color: #D3D3D3;
 }
 
-#cntrcsemap .gt_footnotes {
+#decgxkdcos .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -517,7 +525,7 @@ ul.task-list li input[type="checkbox"] {
   border-right-color: #D3D3D3;
 }
 
-#cntrcsemap .gt_footnote {
+#decgxkdcos .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -526,7 +534,7 @@ ul.task-list li input[type="checkbox"] {
   padding-right: 5px;
 }
 
-#cntrcsemap .gt_sourcenotes {
+#decgxkdcos .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -540,7 +548,7 @@ ul.task-list li input[type="checkbox"] {
   border-right-color: #D3D3D3;
 }
 
-#cntrcsemap .gt_sourcenote {
+#decgxkdcos .gt_sourcenote {
   font-size: 12px;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -548,63 +556,63 @@ ul.task-list li input[type="checkbox"] {
   padding-right: 5px;
 }
 
-#cntrcsemap .gt_left {
+#decgxkdcos .gt_left {
   text-align: left;
 }
 
-#cntrcsemap .gt_center {
+#decgxkdcos .gt_center {
   text-align: center;
 }
 
-#cntrcsemap .gt_right {
+#decgxkdcos .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#cntrcsemap .gt_font_normal {
+#decgxkdcos .gt_font_normal {
   font-weight: normal;
 }
 
-#cntrcsemap .gt_font_bold {
+#decgxkdcos .gt_font_bold {
   font-weight: bold;
 }
 
-#cntrcsemap .gt_font_italic {
+#decgxkdcos .gt_font_italic {
   font-style: italic;
 }
 
-#cntrcsemap .gt_super {
+#decgxkdcos .gt_super {
   font-size: 65%;
 }
 
-#cntrcsemap .gt_footnote_marks {
+#decgxkdcos .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#cntrcsemap .gt_asterisk {
+#decgxkdcos .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#cntrcsemap .gt_indent_1 {
+#decgxkdcos .gt_indent_1 {
   text-indent: 5px;
 }
 
-#cntrcsemap .gt_indent_2 {
+#decgxkdcos .gt_indent_2 {
   text-indent: 10px;
 }
 
-#cntrcsemap .gt_indent_3 {
+#decgxkdcos .gt_indent_3 {
   text-indent: 15px;
 }
 
-#cntrcsemap .gt_indent_4 {
+#decgxkdcos .gt_indent_4 {
   text-indent: 20px;
 }
 
-#cntrcsemap .gt_indent_5 {
+#decgxkdcos .gt_indent_5 {
   text-indent: 25px;
 }
 
@@ -612,121 +620,98 @@ tbody tr:last-child {
   border-bottom: 2px solid #ffffff00;
 }
 </style>
-<table class="gt_table" data-quarto-disable-processing="false" data-quarto-bootstrap="false">
-  <thead>
-    <tr class="gt_col_headings">
-      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1" scope="col" id=""></th>
-      <th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1" style="border-top-width: 0px; border-top-style: solid; border-top-color: black; font-family: Chivo; font-size: 14px; vertical-align: bottom; font-weight: 200; text-transform: uppercase;" scope="col" id="Number of Advertisers">Number of Advertisers</th>
-      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1" style="border-top-width: 0px; border-top-style: solid; border-top-color: black; font-family: Chivo; font-size: 14px; vertical-align: bottom; font-weight: 200; text-transform: uppercase;" scope="col" id="Top Spenders">Top Spenders</th>
-      <th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1" style="border-top-width: 0px; border-top-style: solid; border-top-color: black; font-family: Chivo; font-size: 14px; vertical-align: bottom; font-weight: 200; text-transform: uppercase;" scope="col" id="Number of Ads">Number of Ads</th>
-      <th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1" style="border-top-width: 0px; border-top-style: solid; border-top-color: black; font-family: Chivo; font-size: 14px; vertical-align: bottom; font-weight: 200; text-transform: uppercase;" scope="col" id="Total Spend">Total Spend</th>
-    </tr>
-  </thead>
-  <tbody class="gt_table_body">
-    <tr><th id="stub_1_1" scope="row" class="gt_row gt_center gt_stub"><div data-qmd="BJP"><div class="gt_from_md"><p>BJP</p>
-</div></div></th>
-<td headers="stub_1_1 Number of Advertisers" class="gt_row gt_center" style="border-left-width: 18.5px; border-left-style: solid; border-left-color: #278D27;"><div data-qmd="252"><div class="gt_from_md"><p>252</p>
-</div></div></td>
-<td headers="stub_1_1 Top Spenders" class="gt_row gt_left" style="vertical-align:center"><div data-qmd="<br>1. [Andela Sriramulu Yadav](https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=NL&amp;view_all_page_id=639252199805894) (₹389,562)<br>2. [Shatrughan Gautam](https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=NL&amp;view_all_page_id=261208307785338) (₹368,928)<br>3. [Jai Aahuja जय आहूजा " कर्तव्य="" पथ="" पर"](https:="" www.facebook.com="" ads="" library="" ?ad_type="political_and_issue_ads&amp;country=NL&amp;view_all_page_id=613279638705929)" (₹235,605)<br=""><br>"&gt;<div class="gt_from_md"><p><br>1. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=NL&amp;view_all_page_id=639252199805894">Andela Sriramulu Yadav</a> (₹389,562)<br>2. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=NL&amp;view_all_page_id=261208307785338">Shatrughan Gautam</a> (₹368,928)<br>3. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=NL&amp;view_all_page_id=613279638705929">Jai Aahuja जय आहूजा “कर्तव्य पथ पर”</a> (₹235,605)<br><br></p>
-</div></div></td>
-<td headers="stub_1_1 Number of Ads" class="gt_row gt_center"><div data-qmd="15,885"><div class="gt_from_md"><p>15,885</p>
-</div></div></td>
-<td headers="stub_1_1 Total Spend" class="gt_row gt_center"><div data-qmd="₹6,412,235"><div class="gt_from_md"><p>₹6,412,235</p>
-</div></div></td></tr>
-    <tr><th id="stub_1_2" scope="row" class="gt_row gt_center gt_stub"><div data-qmd="INC"><div class="gt_from_md"><p>INC</p>
-</div></div></th>
-<td headers="stub_1_2 Number of Advertisers" class="gt_row gt_center" style="border-left-width: 18.5px; border-left-style: solid; border-left-color: #EE5A1C;"><div data-qmd="171"><div class="gt_from_md"><p>171</p>
-</div></div></td>
-<td headers="stub_1_2 Top Spenders" class="gt_row gt_left" style="vertical-align:center"><div data-qmd="<br>1. [Kharge Fan Club](https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=NL&amp;view_all_page_id=117221101343678) (₹1,262,708)<br>2. [Gehlot Phir Se](https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=NL&amp;view_all_page_id=108080828884036) (₹669,832)<br>3. [Uttam Kumar Reddy](https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=NL&amp;view_all_page_id=153891144797146) (₹262,465)<br><br>"><div class="gt_from_md"><p><br>1. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=NL&amp;view_all_page_id=117221101343678">Kharge Fan Club</a> (₹1,262,708)<br>2. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=NL&amp;view_all_page_id=108080828884036">Gehlot Phir Se</a> (₹669,832)<br>3. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=NL&amp;view_all_page_id=153891144797146">Uttam Kumar Reddy</a> (₹262,465)<br><br></p>
-</div></div></td>
-<td headers="stub_1_2 Number of Ads" class="gt_row gt_center"><div data-qmd="8,930"><div class="gt_from_md"><p>8,930</p>
-</div></div></td>
-<td headers="stub_1_2 Total Spend" class="gt_row gt_center"><div data-qmd="₹6,233,768"><div class="gt_from_md"><p>₹6,233,768</p>
-</div></div></td></tr>
-    <tr><th id="stub_1_3" scope="row" class="gt_row gt_center gt_stub"><div data-qmd="Gov"><div class="gt_from_md"><p>Gov</p>
-</div></div></th>
-<td headers="stub_1_3 Number of Advertisers" class="gt_row gt_center" style="border-left-width: 18.5px; border-left-style: solid; border-left-color: #792061;"><div data-qmd="8"><div class="gt_from_md"><p>8</p>
-</div></div></td>
-<td headers="stub_1_3 Top Spenders" class="gt_row gt_left" style="vertical-align:center"><div data-qmd="<br>1. [PMFBY](https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=NL&amp;view_all_page_id=108529574059980) (₹419,228)<br>2. [GAIL (India) Limited](https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=NL&amp;view_all_page_id=132495066874513) (₹332,273)<br>3. [Amrit Mahotsav](https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=NL&amp;view_all_page_id=101713962007976) (₹236,388)<br><br>"><div class="gt_from_md"><p><br>1. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=NL&amp;view_all_page_id=108529574059980">PMFBY</a> (₹419,228)<br>2. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=NL&amp;view_all_page_id=132495066874513">GAIL (India) Limited</a> (₹332,273)<br>3. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=NL&amp;view_all_page_id=101713962007976">Amrit Mahotsav</a> (₹236,388)<br><br></p>
-</div></div></td>
-<td headers="stub_1_3 Number of Ads" class="gt_row gt_center"><div data-qmd="358"><div class="gt_from_md"><p>358</p>
-</div></div></td>
-<td headers="stub_1_3 Total Spend" class="gt_row gt_center"><div data-qmd="₹1,047,014"><div class="gt_from_md"><p>₹1,047,014</p>
-</div></div></td></tr>
-    <tr><th id="stub_1_4" scope="row" class="gt_row gt_center gt_stub"><div data-qmd="Loktantrik"><div class="gt_from_md"><p>Loktantrik</p>
-</div></div></th>
-<td headers="stub_1_4 Number of Advertisers" class="gt_row gt_center" style="border-left-width: 18.5px; border-left-style: solid; border-left-color: #a03350;"><div data-qmd="6"><div class="gt_from_md"><p>6</p>
-</div></div></td>
-<td headers="stub_1_4 Top Spenders" class="gt_row gt_left" style="vertical-align:center"><div data-qmd="<br>1. [Badri Lal Jat](https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=NL&amp;view_all_page_id=107786371407044) (₹86,627)<br>2. [Udai Lal Dangi](https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=NL&amp;view_all_page_id=935230076683817) (₹62,408)<br>3. [Vijay Pal Singh](https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=NL&amp;view_all_page_id=581097272235320) (₹59,398)<br><br>"><div class="gt_from_md"><p><br>1. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=NL&amp;view_all_page_id=107786371407044">Badri Lal Jat</a> (₹86,627)<br>2. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=NL&amp;view_all_page_id=935230076683817">Udai Lal Dangi</a> (₹62,408)<br>3. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=NL&amp;view_all_page_id=581097272235320">Vijay Pal Singh</a> (₹59,398)<br><br></p>
-</div></div></td>
-<td headers="stub_1_4 Number of Ads" class="gt_row gt_center"><div data-qmd="445"><div class="gt_from_md"><p>445</p>
-</div></div></td>
-<td headers="stub_1_4 Total Spend" class="gt_row gt_center"><div data-qmd="₹289,692"><div class="gt_from_md"><p>₹289,692</p>
-</div></div></td></tr>
-    <tr><th id="stub_1_5" scope="row" class="gt_row gt_center gt_stub"><div data-qmd="BSP"><div class="gt_from_md"><p>BSP</p>
-</div></div></th>
-<td headers="stub_1_5 Number of Advertisers" class="gt_row gt_center" style="border-left-width: 18.5px; border-left-style: solid; border-left-color: #6382ac;"><div data-qmd="4"><div class="gt_from_md"><p>4</p>
-</div></div></td>
-<td headers="stub_1_5 Top Spenders" class="gt_row gt_left" style="vertical-align:center"><div data-qmd="<br>1. [Ritesh Sharma](https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=NL&amp;view_all_page_id=616628545098948) (₹182,611)<br>2. [Manoj Ghumariya](https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=NL&amp;view_all_page_id=105617485464172) (₹12,450)<br>3. [Mukesh Sharma amer vidhansabha](https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=NL&amp;view_all_page_id=111974434579878) (₹3,252)<br><br>"><div class="gt_from_md"><p><br>1. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=NL&amp;view_all_page_id=616628545098948">Ritesh Sharma</a> (₹182,611)<br>2. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=NL&amp;view_all_page_id=105617485464172">Manoj Ghumariya</a> (₹12,450)<br>3. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=NL&amp;view_all_page_id=111974434579878">Mukesh Sharma amer vidhansabha</a> (₹3,252)<br><br></p>
-</div></div></td>
-<td headers="stub_1_5 Number of Ads" class="gt_row gt_center"><div data-qmd="473"><div class="gt_from_md"><p>473</p>
-</div></div></td>
-<td headers="stub_1_5 Total Spend" class="gt_row gt_center"><div data-qmd="₹200,516"><div class="gt_from_md"><p>₹200,516</p>
-</div></div></td></tr>
-    <tr><th id="stub_1_6" scope="row" class="gt_row gt_center gt_stub"><div data-qmd="AAP"><div class="gt_from_md"><p>AAP</p>
-</div></div></th>
-<td headers="stub_1_6 Number of Advertisers" class="gt_row gt_center" style="border-left-width: 18.5px; border-left-style: solid; border-left-color: #3672b1;"><div data-qmd="3"><div class="gt_from_md"><p>3</p>
-</div></div></td>
-<td headers="stub_1_6 Top Spenders" class="gt_row gt_left" style="vertical-align:center"><div data-qmd="<br>1. [Archit Gupta](https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=NL&amp;view_all_page_id=103891121744943) (₹168,601)<br>2. [Mahendra Mandia](https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=NL&amp;view_all_page_id=101661619345461) (₹5,915)<br>3. [AAP Sachin Kaushik](https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=NL&amp;view_all_page_id=108525568458223) (₹3,740)<br><br>"><div class="gt_from_md"><p><br>1. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=NL&amp;view_all_page_id=103891121744943">Archit Gupta</a> (₹168,601)<br>2. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=NL&amp;view_all_page_id=101661619345461">Mahendra Mandia</a> (₹5,915)<br>3. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=NL&amp;view_all_page_id=108525568458223">AAP Sachin Kaushik</a> (₹3,740)<br><br></p>
-</div></div></td>
-<td headers="stub_1_6 Number of Ads" class="gt_row gt_center"><div data-qmd="209"><div class="gt_from_md"><p>209</p>
-</div></div></td>
-<td headers="stub_1_6 Total Spend" class="gt_row gt_center"><div data-qmd="₹178,256"><div class="gt_from_md"><p>₹178,256</p>
-</div></div></td></tr>
-    <tr><th id="stub_1_7" scope="row" class="gt_row gt_center gt_stub"><div data-qmd="Samaj"><div class="gt_from_md"><p>Samaj</p>
-</div></div></th>
-<td headers="stub_1_7 Number of Advertisers" class="gt_row gt_center" style="border-left-width: 18.5px; border-left-style: solid; border-left-color: #3382c0;"><div data-qmd="1"><div class="gt_from_md"><p>1</p>
-</div></div></td>
-<td headers="stub_1_7 Top Spenders" class="gt_row gt_left" style="vertical-align:center"><div data-qmd="<br>1. [Nallapati Ramu](https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=NL&amp;view_all_page_id=100696622444764) (₹49,784)<br><br>"><div class="gt_from_md"><p><br>1. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=NL&amp;view_all_page_id=100696622444764">Nallapati Ramu</a> (₹49,784)<br><br></p>
-</div></div></td>
-<td headers="stub_1_7 Number of Ads" class="gt_row gt_center"><div data-qmd="85"><div class="gt_from_md"><p>85</p>
-</div></div></td>
-<td headers="stub_1_7 Total Spend" class="gt_row gt_center"><div data-qmd="₹49,784"><div class="gt_from_md"><p>₹49,784</p>
-</div></div></td></tr>
-    <tr><th id="stub_1_8" scope="row" class="gt_row gt_center gt_stub"><div data-qmd="SS"><div class="gt_from_md"><p>SS</p>
-</div></div></th>
-<td headers="stub_1_8 Number of Advertisers" class="gt_row gt_center" style="border-left-width: 18.5px; border-left-style: solid; border-left-color: #3672bb;"><div data-qmd="1"><div class="gt_from_md"><p>1</p>
-</div></div></td>
-<td headers="stub_1_8 Top Spenders" class="gt_row gt_left" style="vertical-align:center"><div data-qmd="<br>1. [Eknath Shinde - एकनाथ संभाजी शिंदे](https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=NL&amp;view_all_page_id=421179061356837) (₹32,777)<br><br>"><div class="gt_from_md"><p><br>1. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=NL&amp;view_all_page_id=421179061356837">Eknath Shinde - एकनाथ संभाजी शिंदे</a> (₹32,777)<br><br></p>
-</div></div></td>
-<td headers="stub_1_8 Number of Ads" class="gt_row gt_center"><div data-qmd="1"><div class="gt_from_md"><p>1</p>
-</div></div></td>
-<td headers="stub_1_8 Total Spend" class="gt_row gt_center"><div data-qmd="₹32,777"><div class="gt_from_md"><p>₹32,777</p>
-</div></div></td></tr>
-    <tr><th id="stub_1_9" scope="row" class="gt_row gt_center gt_stub"><div data-qmd="Oth"><div class="gt_from_md"><p>Oth</p>
-</div></div></th>
-<td headers="stub_1_9 Number of Advertisers" class="gt_row gt_center" style="border-left-width: 18.5px; border-left-style: solid; border-left-color: #c1921e;"><div data-qmd="1"><div class="gt_from_md"><p>1</p>
-</div></div></td>
-<td headers="stub_1_9 Top Spenders" class="gt_row gt_left" style="vertical-align:center"><div data-qmd="<br>1. [The Chaupal](https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=NL&amp;view_all_page_id=526222491203445) (₹25,838)<br><br>"><div class="gt_from_md"><p><br>1. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=NL&amp;view_all_page_id=526222491203445">The Chaupal</a> (₹25,838)<br><br></p>
-</div></div></td>
-<td headers="stub_1_9 Number of Ads" class="gt_row gt_center"><div data-qmd="14"><div class="gt_from_md"><p>14</p>
-</div></div></td>
-<td headers="stub_1_9 Total Spend" class="gt_row gt_center"><div data-qmd="₹25,838"><div class="gt_from_md"><p>₹25,838</p>
-</div></div></td></tr>
-    <tr><th id="stub_1_10" scope="row" class="gt_row gt_center gt_stub"><div data-qmd="JJP"><div class="gt_from_md"><p>JJP</p>
-</div></div></th>
-<td headers="stub_1_10 Number of Advertisers" class="gt_row gt_center" style="border-left-width: 18.5px; border-left-style: solid; border-left-color: #44719c;"><div data-qmd="1"><div class="gt_from_md"><p>1</p>
-</div></div></td>
-<td headers="stub_1_10 Top Spenders" class="gt_row gt_left" style="vertical-align:center"><div data-qmd="<br>1. [Prateek Maharia](https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=NL&amp;view_all_page_id=115764509880849) (₹203)<br><br>"><div class="gt_from_md"><p><br>1. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=NL&amp;view_all_page_id=115764509880849">Prateek Maharia</a> (₹203)<br><br></p>
-</div></div></td>
-<td headers="stub_1_10 Number of Ads" class="gt_row gt_center"><div data-qmd="1"><div class="gt_from_md"><p>1</p>
-</div></div></td>
-<td headers="stub_1_10 Total Spend" class="gt_row gt_center"><div data-qmd="₹203"><div class="gt_from_md"><p>₹203</p>
-</div></div></td></tr>
-  </tbody>
-  
-  
+
+<table class="gt_table table table-sm table-striped small" data-quarto-postprocess="true" data-quarto-disable-processing="false" data-quarto-bootstrap="false">
+<colgroup>
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+</colgroup>
+<thead>
+<tr class="header gt_col_headings">
+<th class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" scope="col"></th>
+<th id="Number of Advertisers" class="gt_col_heading gt_columns_bottom_border gt_center" data-quarto-table-cell-role="th" style="border-top-width: 0px; border-top-style: solid; border-top-color: black; font-family: Chivo; font-size: 14px; vertical-align: bottom; font-weight: 200; text-transform: uppercase" scope="col">Number of Advertisers</th>
+<th id="Top Spenders" class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" style="border-top-width: 0px; border-top-style: solid; border-top-color: black; font-family: Chivo; font-size: 14px; vertical-align: bottom; font-weight: 200; text-transform: uppercase" scope="col">Top Spenders</th>
+<th id="Number of Ads" class="gt_col_heading gt_columns_bottom_border gt_center" data-quarto-table-cell-role="th" style="border-top-width: 0px; border-top-style: solid; border-top-color: black; font-family: Chivo; font-size: 14px; vertical-align: bottom; font-weight: 200; text-transform: uppercase" scope="col">Number of Ads</th>
+<th id="Total Spend" class="gt_col_heading gt_columns_bottom_border gt_center" data-quarto-table-cell-role="th" style="border-top-width: 0px; border-top-style: solid; border-top-color: black; font-family: Chivo; font-size: 14px; vertical-align: bottom; font-weight: 200; text-transform: uppercase" scope="col">Total Spend</th>
+</tr>
+</thead>
+<tbody class="gt_table_body">
+<tr class="odd">
+<td id="stub_1_1" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row"><p>BJP</p></td>
+<td class="gt_row gt_center" headers="stub_1_1 Number of Advertisers" style="border-left-width: 18.5px; border-left-style: solid; border-left-color: #278D27"><p>252</p></td>
+<td class="gt_row gt_left" headers="stub_1_1 Top Spenders" style="vertical-align: center"><p><br>1. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=NL&amp;view_all_page_id=639252199805894">Andela Sriramulu Yadav</a> (₹389,562)<br>2. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=NL&amp;view_all_page_id=261208307785338">Shatrughan Gautam</a> (₹368,928)<br>3. [Jai Aahuja जय आहूजा</p></td>
+<td class="gt_row gt_center" headers="stub_1_1 Number of Ads"><p>15,885</p></td>
+<td class="gt_row gt_center" headers="stub_1_1 Total Spend"><p>₹6,412,235</p></td>
+</tr>
+<tr class="even">
+<td id="stub_1_2" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row"><p>INC</p></td>
+<td class="gt_row gt_center" headers="stub_1_2 Number of Advertisers" style="border-left-width: 18.5px; border-left-style: solid; border-left-color: #EE5A1C"><p>171</p></td>
+<td class="gt_row gt_left" headers="stub_1_2 Top Spenders" style="vertical-align: center"><p><br>1. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=NL&amp;view_all_page_id=117221101343678">Kharge Fan Club</a> (₹1,262,708)<br>2. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=NL&amp;view_all_page_id=108080828884036">Gehlot Phir Se</a> (₹669,832)<br>3. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=NL&amp;view_all_page_id=153891144797146">Uttam Kumar Reddy</a> (₹262,465)<br><br></p></td>
+<td class="gt_row gt_center" headers="stub_1_2 Number of Ads"><p>8,930</p></td>
+<td class="gt_row gt_center" headers="stub_1_2 Total Spend"><p>₹6,233,768</p></td>
+</tr>
+<tr class="odd">
+<td id="stub_1_3" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row"><p>Gov</p></td>
+<td class="gt_row gt_center" headers="stub_1_3 Number of Advertisers" style="border-left-width: 18.5px; border-left-style: solid; border-left-color: #792061"><p>8</p></td>
+<td class="gt_row gt_left" headers="stub_1_3 Top Spenders" style="vertical-align: center"><p><br>1. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=NL&amp;view_all_page_id=108529574059980">PMFBY</a> (₹419,228)<br>2. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=NL&amp;view_all_page_id=132495066874513">GAIL (India) Limited</a> (₹332,273)<br>3. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=NL&amp;view_all_page_id=101713962007976">Amrit Mahotsav</a> (₹236,388)<br><br></p></td>
+<td class="gt_row gt_center" headers="stub_1_3 Number of Ads"><p>358</p></td>
+<td class="gt_row gt_center" headers="stub_1_3 Total Spend"><p>₹1,047,014</p></td>
+</tr>
+<tr class="even">
+<td id="stub_1_4" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row"><p>Loktantrik</p></td>
+<td class="gt_row gt_center" headers="stub_1_4 Number of Advertisers" style="border-left-width: 18.5px; border-left-style: solid; border-left-color: #a03350"><p>6</p></td>
+<td class="gt_row gt_left" headers="stub_1_4 Top Spenders" style="vertical-align: center"><p><br>1. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=NL&amp;view_all_page_id=107786371407044">Badri Lal Jat</a> (₹86,627)<br>2. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=NL&amp;view_all_page_id=935230076683817">Udai Lal Dangi</a> (₹62,408)<br>3. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=NL&amp;view_all_page_id=581097272235320">Vijay Pal Singh</a> (₹59,398)<br><br></p></td>
+<td class="gt_row gt_center" headers="stub_1_4 Number of Ads"><p>445</p></td>
+<td class="gt_row gt_center" headers="stub_1_4 Total Spend"><p>₹289,692</p></td>
+</tr>
+<tr class="odd">
+<td id="stub_1_5" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row"><p>BSP</p></td>
+<td class="gt_row gt_center" headers="stub_1_5 Number of Advertisers" style="border-left-width: 18.5px; border-left-style: solid; border-left-color: #6382ac"><p>4</p></td>
+<td class="gt_row gt_left" headers="stub_1_5 Top Spenders" style="vertical-align: center"><p><br>1. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=NL&amp;view_all_page_id=616628545098948">Ritesh Sharma</a> (₹182,611)<br>2. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=NL&amp;view_all_page_id=105617485464172">Manoj Ghumariya</a> (₹12,450)<br>3. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=NL&amp;view_all_page_id=111974434579878">Mukesh Sharma amer vidhansabha</a> (₹3,252)<br><br></p></td>
+<td class="gt_row gt_center" headers="stub_1_5 Number of Ads"><p>473</p></td>
+<td class="gt_row gt_center" headers="stub_1_5 Total Spend"><p>₹200,516</p></td>
+</tr>
+<tr class="even">
+<td id="stub_1_6" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row"><p>AAP</p></td>
+<td class="gt_row gt_center" headers="stub_1_6 Number of Advertisers" style="border-left-width: 18.5px; border-left-style: solid; border-left-color: #3672b1"><p>3</p></td>
+<td class="gt_row gt_left" headers="stub_1_6 Top Spenders" style="vertical-align: center"><p><br>1. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=NL&amp;view_all_page_id=103891121744943">Archit Gupta</a> (₹168,601)<br>2. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=NL&amp;view_all_page_id=101661619345461">Mahendra Mandia</a> (₹5,915)<br>3. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=NL&amp;view_all_page_id=108525568458223">AAP Sachin Kaushik</a> (₹3,740)<br><br></p></td>
+<td class="gt_row gt_center" headers="stub_1_6 Number of Ads"><p>209</p></td>
+<td class="gt_row gt_center" headers="stub_1_6 Total Spend"><p>₹178,256</p></td>
+</tr>
+<tr class="odd">
+<td id="stub_1_7" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row"><p>Samaj</p></td>
+<td class="gt_row gt_center" headers="stub_1_7 Number of Advertisers" style="border-left-width: 18.5px; border-left-style: solid; border-left-color: #3382c0"><p>1</p></td>
+<td class="gt_row gt_left" headers="stub_1_7 Top Spenders" style="vertical-align: center"><p><br>1. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=NL&amp;view_all_page_id=100696622444764">Nallapati Ramu</a> (₹49,784)<br><br></p></td>
+<td class="gt_row gt_center" headers="stub_1_7 Number of Ads"><p>85</p></td>
+<td class="gt_row gt_center" headers="stub_1_7 Total Spend"><p>₹49,784</p></td>
+</tr>
+<tr class="even">
+<td id="stub_1_8" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row"><p>SS</p></td>
+<td class="gt_row gt_center" headers="stub_1_8 Number of Advertisers" style="border-left-width: 18.5px; border-left-style: solid; border-left-color: #3672bb"><p>1</p></td>
+<td class="gt_row gt_left" headers="stub_1_8 Top Spenders" style="vertical-align: center"><p><br>1. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=NL&amp;view_all_page_id=421179061356837">Eknath Shinde - एकनाथ संभाजी शिंदे</a> (₹32,777)<br><br></p></td>
+<td class="gt_row gt_center" headers="stub_1_8 Number of Ads"><p>1</p></td>
+<td class="gt_row gt_center" headers="stub_1_8 Total Spend"><p>₹32,777</p></td>
+</tr>
+<tr class="odd">
+<td id="stub_1_9" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row"><p>Oth</p></td>
+<td class="gt_row gt_center" headers="stub_1_9 Number of Advertisers" style="border-left-width: 18.5px; border-left-style: solid; border-left-color: #c1921e"><p>1</p></td>
+<td class="gt_row gt_left" headers="stub_1_9 Top Spenders" style="vertical-align: center"><p><br>1. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=NL&amp;view_all_page_id=526222491203445">The Chaupal</a> (₹25,838)<br><br></p></td>
+<td class="gt_row gt_center" headers="stub_1_9 Number of Ads"><p>14</p></td>
+<td class="gt_row gt_center" headers="stub_1_9 Total Spend"><p>₹25,838</p></td>
+</tr>
+<tr class="even">
+<td id="stub_1_10" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row"><p>JJP</p></td>
+<td class="gt_row gt_center" headers="stub_1_10 Number of Advertisers" style="border-left-width: 18.5px; border-left-style: solid; border-left-color: #44719c"><p>1</p></td>
+<td class="gt_row gt_left" headers="stub_1_10 Top Spenders" style="vertical-align: center"><p><br>1. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=NL&amp;view_all_page_id=115764509880849">Prateek Maharia</a> (₹203)<br><br></p></td>
+<td class="gt_row gt_center" headers="stub_1_10 Number of Ads"><p>1</p></td>
+<td class="gt_row gt_center" headers="stub_1_10 Total Spend"><p>₹203</p></td>
+</tr>
+</tbody>
 </table>
+
 </div>
 </div>
 </div>
@@ -735,28 +720,27 @@ tbody tr:last-child {
 <p>During this period, political parties spent a total of ₹5,030,595 and displayed 8812 advertisements on Meta.</p>
 <div class="cell">
 <div class="cell-output-display">
-
-<div id="whgmpusoba" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<div id="giiwzkdeuu" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
 <style>@import url("https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Cairo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-#whgmpusoba table {
+#giiwzkdeuu table {
   font-family: Cairo, system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#whgmpusoba thead, #whgmpusoba tbody, #whgmpusoba tfoot, #whgmpusoba tr, #whgmpusoba td, #whgmpusoba th {
+#giiwzkdeuu thead, #giiwzkdeuu tbody, #giiwzkdeuu tfoot, #giiwzkdeuu tr, #giiwzkdeuu td, #giiwzkdeuu th {
   border-style: none;
 }
 
-#whgmpusoba p {
+#giiwzkdeuu p {
   margin: 0;
   padding: 0;
 }
 
-#whgmpusoba .gt_table {
+#giiwzkdeuu .gt_table {
   display: table;
   border-collapse: collapse;
   line-height: normal;
@@ -782,12 +766,12 @@ tbody tr:last-child {
   border-left-color: #D3D3D3;
 }
 
-#whgmpusoba .gt_caption {
+#giiwzkdeuu .gt_caption {
   padding-top: 4px;
   padding-bottom: 4px;
 }
 
-#whgmpusoba .gt_title {
+#giiwzkdeuu .gt_title {
   color: #333333;
   font-size: 125%;
   font-weight: initial;
@@ -799,7 +783,7 @@ tbody tr:last-child {
   border-bottom-width: 0;
 }
 
-#whgmpusoba .gt_subtitle {
+#giiwzkdeuu .gt_subtitle {
   color: #333333;
   font-size: 85%;
   font-weight: initial;
@@ -811,7 +795,7 @@ tbody tr:last-child {
   border-top-width: 0;
 }
 
-#whgmpusoba .gt_heading {
+#giiwzkdeuu .gt_heading {
   background-color: #FFFFFF;
   text-align: left;
   border-bottom-color: #FFFFFF;
@@ -823,13 +807,13 @@ tbody tr:last-child {
   border-right-color: #D3D3D3;
 }
 
-#whgmpusoba .gt_bottom_border {
+#giiwzkdeuu .gt_bottom_border {
   border-bottom-style: none;
   border-bottom-width: 2px;
   border-bottom-color: #D3D3D3;
 }
 
-#whgmpusoba .gt_col_headings {
+#giiwzkdeuu .gt_col_headings {
   border-top-style: none;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -844,7 +828,7 @@ tbody tr:last-child {
   border-right-color: #D3D3D3;
 }
 
-#whgmpusoba .gt_col_heading {
+#giiwzkdeuu .gt_col_heading {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -864,7 +848,7 @@ tbody tr:last-child {
   overflow-x: hidden;
 }
 
-#whgmpusoba .gt_column_spanner_outer {
+#giiwzkdeuu .gt_column_spanner_outer {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -876,15 +860,15 @@ tbody tr:last-child {
   padding-right: 4px;
 }
 
-#whgmpusoba .gt_column_spanner_outer:first-child {
+#giiwzkdeuu .gt_column_spanner_outer:first-child {
   padding-left: 0;
 }
 
-#whgmpusoba .gt_column_spanner_outer:last-child {
+#giiwzkdeuu .gt_column_spanner_outer:last-child {
   padding-right: 0;
 }
 
-#whgmpusoba .gt_column_spanner {
+#giiwzkdeuu .gt_column_spanner {
   border-bottom-style: solid;
   border-bottom-width: 2px;
   border-bottom-color: #000000;
@@ -896,11 +880,11 @@ tbody tr:last-child {
   width: 100%;
 }
 
-#whgmpusoba .gt_spanner_row {
+#giiwzkdeuu .gt_spanner_row {
   border-bottom-style: hidden;
 }
 
-#whgmpusoba .gt_group_heading {
+#giiwzkdeuu .gt_group_heading {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -926,7 +910,7 @@ tbody tr:last-child {
   text-align: left;
 }
 
-#whgmpusoba .gt_empty_group_heading {
+#giiwzkdeuu .gt_empty_group_heading {
   padding: 0.5px;
   color: #333333;
   background-color: #FFFFFF;
@@ -941,15 +925,15 @@ tbody tr:last-child {
   vertical-align: middle;
 }
 
-#whgmpusoba .gt_from_md > :first-child {
+#giiwzkdeuu .gt_from_md > :first-child {
   margin-top: 0;
 }
 
-#whgmpusoba .gt_from_md > :last-child {
+#giiwzkdeuu .gt_from_md > :last-child {
   margin-bottom: 0;
 }
 
-#whgmpusoba .gt_row {
+#giiwzkdeuu .gt_row {
   padding-top: 3px;
   padding-bottom: 3px;
   padding-left: 5px;
@@ -968,7 +952,7 @@ tbody tr:last-child {
   overflow-x: hidden;
 }
 
-#whgmpusoba .gt_stub {
+#giiwzkdeuu .gt_stub {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -981,7 +965,7 @@ tbody tr:last-child {
   padding-right: 5px;
 }
 
-#whgmpusoba .gt_stub_row_group {
+#giiwzkdeuu .gt_stub_row_group {
   color: #333333;
   background-color: #FFFFFF;
   font-size: 100%;
@@ -995,15 +979,15 @@ tbody tr:last-child {
   vertical-align: top;
 }
 
-#whgmpusoba .gt_row_group_first td {
+#giiwzkdeuu .gt_row_group_first td {
   border-top-width: 2px;
 }
 
-#whgmpusoba .gt_row_group_first th {
+#giiwzkdeuu .gt_row_group_first th {
   border-top-width: 2px;
 }
 
-#whgmpusoba .gt_summary_row {
+#giiwzkdeuu .gt_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1013,16 +997,16 @@ tbody tr:last-child {
   padding-right: 5px;
 }
 
-#whgmpusoba .gt_first_summary_row {
+#giiwzkdeuu .gt_first_summary_row {
   border-top-style: solid;
   border-top-color: #D3D3D3;
 }
 
-#whgmpusoba .gt_first_summary_row.thick {
+#giiwzkdeuu .gt_first_summary_row.thick {
   border-top-width: 2px;
 }
 
-#whgmpusoba .gt_last_summary_row {
+#giiwzkdeuu .gt_last_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1032,7 +1016,7 @@ tbody tr:last-child {
   border-bottom-color: #D3D3D3;
 }
 
-#whgmpusoba .gt_grand_summary_row {
+#giiwzkdeuu .gt_grand_summary_row {
   color: #333333;
   background-color: #FFFFFF;
   text-transform: inherit;
@@ -1042,7 +1026,7 @@ tbody tr:last-child {
   padding-right: 5px;
 }
 
-#whgmpusoba .gt_first_grand_summary_row {
+#giiwzkdeuu .gt_first_grand_summary_row {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1052,7 +1036,7 @@ tbody tr:last-child {
   border-top-color: #D3D3D3;
 }
 
-#whgmpusoba .gt_last_grand_summary_row_top {
+#giiwzkdeuu .gt_last_grand_summary_row_top {
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 5px;
@@ -1062,11 +1046,11 @@ tbody tr:last-child {
   border-bottom-color: #D3D3D3;
 }
 
-#whgmpusoba .gt_striped {
+#giiwzkdeuu .gt_striped {
   background-color: rgba(128, 128, 128, 0.05);
 }
 
-#whgmpusoba .gt_table_body {
+#giiwzkdeuu .gt_table_body {
   border-top-style: solid;
   border-top-width: 2px;
   border-top-color: #D3D3D3;
@@ -1075,7 +1059,7 @@ tbody tr:last-child {
   border-bottom-color: #D3D3D3;
 }
 
-#whgmpusoba .gt_footnotes {
+#giiwzkdeuu .gt_footnotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1089,7 +1073,7 @@ tbody tr:last-child {
   border-right-color: #D3D3D3;
 }
 
-#whgmpusoba .gt_footnote {
+#giiwzkdeuu .gt_footnote {
   margin: 0px;
   font-size: 90%;
   padding-top: 4px;
@@ -1098,7 +1082,7 @@ tbody tr:last-child {
   padding-right: 5px;
 }
 
-#whgmpusoba .gt_sourcenotes {
+#giiwzkdeuu .gt_sourcenotes {
   color: #333333;
   background-color: #FFFFFF;
   border-bottom-style: none;
@@ -1112,7 +1096,7 @@ tbody tr:last-child {
   border-right-color: #D3D3D3;
 }
 
-#whgmpusoba .gt_sourcenote {
+#giiwzkdeuu .gt_sourcenote {
   font-size: 12px;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -1120,63 +1104,63 @@ tbody tr:last-child {
   padding-right: 5px;
 }
 
-#whgmpusoba .gt_left {
+#giiwzkdeuu .gt_left {
   text-align: left;
 }
 
-#whgmpusoba .gt_center {
+#giiwzkdeuu .gt_center {
   text-align: center;
 }
 
-#whgmpusoba .gt_right {
+#giiwzkdeuu .gt_right {
   text-align: right;
   font-variant-numeric: tabular-nums;
 }
 
-#whgmpusoba .gt_font_normal {
+#giiwzkdeuu .gt_font_normal {
   font-weight: normal;
 }
 
-#whgmpusoba .gt_font_bold {
+#giiwzkdeuu .gt_font_bold {
   font-weight: bold;
 }
 
-#whgmpusoba .gt_font_italic {
+#giiwzkdeuu .gt_font_italic {
   font-style: italic;
 }
 
-#whgmpusoba .gt_super {
+#giiwzkdeuu .gt_super {
   font-size: 65%;
 }
 
-#whgmpusoba .gt_footnote_marks {
+#giiwzkdeuu .gt_footnote_marks {
   font-size: 75%;
   vertical-align: 0.4em;
   position: initial;
 }
 
-#whgmpusoba .gt_asterisk {
+#giiwzkdeuu .gt_asterisk {
   font-size: 100%;
   vertical-align: 0;
 }
 
-#whgmpusoba .gt_indent_1 {
+#giiwzkdeuu .gt_indent_1 {
   text-indent: 5px;
 }
 
-#whgmpusoba .gt_indent_2 {
+#giiwzkdeuu .gt_indent_2 {
   text-indent: 10px;
 }
 
-#whgmpusoba .gt_indent_3 {
+#giiwzkdeuu .gt_indent_3 {
   text-indent: 15px;
 }
 
-#whgmpusoba .gt_indent_4 {
+#giiwzkdeuu .gt_indent_4 {
   text-indent: 20px;
 }
 
-#whgmpusoba .gt_indent_5 {
+#giiwzkdeuu .gt_indent_5 {
   text-indent: 25px;
 }
 
@@ -1184,111 +1168,91 @@ tbody tr:last-child {
   border-bottom: 2px solid #ffffff00;
 }
 </style>
-<table class="gt_table" data-quarto-disable-processing="false" data-quarto-bootstrap="false">
-  <thead>
-    <tr class="gt_col_headings">
-      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1" scope="col" id=""></th>
-      <th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1" style="border-top-width: 0px; border-top-style: solid; border-top-color: black; font-family: Chivo; font-size: 14px; vertical-align: bottom; font-weight: 200; text-transform: uppercase;" scope="col" id="Number of Advertisers">Number of Advertisers</th>
-      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1" style="border-top-width: 0px; border-top-style: solid; border-top-color: black; font-family: Chivo; font-size: 14px; vertical-align: bottom; font-weight: 200; text-transform: uppercase;" scope="col" id="Top Spenders">Top Spenders</th>
-      <th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1" style="border-top-width: 0px; border-top-style: solid; border-top-color: black; font-family: Chivo; font-size: 14px; vertical-align: bottom; font-weight: 200; text-transform: uppercase;" scope="col" id="Number of Ads">Number of Ads</th>
-      <th class="gt_col_heading gt_columns_bottom_border gt_center" rowspan="1" colspan="1" style="border-top-width: 0px; border-top-style: solid; border-top-color: black; font-family: Chivo; font-size: 14px; vertical-align: bottom; font-weight: 200; text-transform: uppercase;" scope="col" id="Total Spend">Total Spend</th>
-    </tr>
-  </thead>
-  <tbody class="gt_table_body">
-    <tr><th id="stub_1_1" scope="row" class="gt_row gt_center gt_stub"><div data-qmd="BJP"><div class="gt_from_md"><p>BJP</p>
-</div></div></th>
-<td headers="stub_1_1 Number of Advertisers" class="gt_row gt_center" style="border-left-width: 18.5px; border-left-style: solid; border-left-color: #278D27;"><div data-qmd="169"><div class="gt_from_md"><p>169</p>
-</div></div></td>
-<td headers="stub_1_1 Top Spenders" class="gt_row gt_left" style="vertical-align:center"><div data-qmd="<br>1. [Andela Sriramulu Yadav](https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=NL&amp;view_all_page_id=639252199805894) (₹271,173)<br>2. [Shatrughan Gautam](https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=NL&amp;view_all_page_id=261208307785338) (₹182,512)<br>3. [Jai Aahuja जय आहूजा " कर्तव्य="" पथ="" पर"](https:="" www.facebook.com="" ads="" library="" ?ad_type="political_and_issue_ads&amp;country=NL&amp;view_all_page_id=613279638705929)" (₹176,300)<br=""><br>"&gt;<div class="gt_from_md"><p><br>1. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=NL&amp;view_all_page_id=639252199805894">Andela Sriramulu Yadav</a> (₹271,173)<br>2. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=NL&amp;view_all_page_id=261208307785338">Shatrughan Gautam</a> (₹182,512)<br>3. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=NL&amp;view_all_page_id=613279638705929">Jai Aahuja जय आहूजा “कर्तव्य पथ पर”</a> (₹176,300)<br><br></p>
-</div></div></td>
-<td headers="stub_1_1 Number of Ads" class="gt_row gt_center"><div data-qmd="5,054"><div class="gt_from_md"><p>5,054</p>
-</div></div></td>
-<td headers="stub_1_1 Total Spend" class="gt_row gt_center"><div data-qmd="₹2,360,340"><div class="gt_from_md"><p>₹2,360,340</p>
-</div></div></td></tr>
-    <tr><th id="stub_1_2" scope="row" class="gt_row gt_center gt_stub"><div data-qmd="INC"><div class="gt_from_md"><p>INC</p>
-</div></div></th>
-<td headers="stub_1_2 Number of Advertisers" class="gt_row gt_center" style="border-left-width: 18.5px; border-left-style: solid; border-left-color: #EE5A1C;"><div data-qmd="114"><div class="gt_from_md"><p>114</p>
-</div></div></td>
-<td headers="stub_1_2 Top Spenders" class="gt_row gt_left" style="vertical-align:center"><div data-qmd="<br>1. [Kharge Fan Club](https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=NL&amp;view_all_page_id=117221101343678) (₹520,484)<br>2. [Gehlot Phir Se](https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=NL&amp;view_all_page_id=108080828884036) (₹226,272)<br>3. [Abhishek Choudhary](https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=NL&amp;view_all_page_id=306533526129048) (₹117,457)<br><br>"><div class="gt_from_md"><p><br>1. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=NL&amp;view_all_page_id=117221101343678">Kharge Fan Club</a> (₹520,484)<br>2. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=NL&amp;view_all_page_id=108080828884036">Gehlot Phir Se</a> (₹226,272)<br>3. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=NL&amp;view_all_page_id=306533526129048">Abhishek Choudhary</a> (₹117,457)<br><br></p>
-</div></div></td>
-<td headers="stub_1_2 Number of Ads" class="gt_row gt_center"><div data-qmd="3,220"><div class="gt_from_md"><p>3,220</p>
-</div></div></td>
-<td headers="stub_1_2 Total Spend" class="gt_row gt_center"><div data-qmd="₹2,292,035"><div class="gt_from_md"><p>₹2,292,035</p>
-</div></div></td></tr>
-    <tr><th id="stub_1_3" scope="row" class="gt_row gt_center gt_stub"><div data-qmd="Gov"><div class="gt_from_md"><p>Gov</p>
-</div></div></th>
-<td headers="stub_1_3 Number of Advertisers" class="gt_row gt_center" style="border-left-width: 18.5px; border-left-style: solid; border-left-color: #792061;"><div data-qmd="5"><div class="gt_from_md"><p>5</p>
-</div></div></td>
-<td headers="stub_1_3 Top Spenders" class="gt_row gt_left" style="vertical-align:center"><div data-qmd="<br>1. [GAIL (India) Limited](https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=NL&amp;view_all_page_id=132495066874513) (₹83,120)<br>2. [PMFBY](https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=NL&amp;view_all_page_id=108529574059980) (₹23,095)<br>3. [PM SVANidhi](https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=NL&amp;view_all_page_id=129102672254175) (₹5,742)<br><br>"><div class="gt_from_md"><p><br>1. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=NL&amp;view_all_page_id=132495066874513">GAIL (India) Limited</a> (₹83,120)<br>2. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=NL&amp;view_all_page_id=108529574059980">PMFBY</a> (₹23,095)<br>3. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=NL&amp;view_all_page_id=129102672254175">PM SVANidhi</a> (₹5,742)<br><br></p>
-</div></div></td>
-<td headers="stub_1_3 Number of Ads" class="gt_row gt_center"><div data-qmd="89"><div class="gt_from_md"><p>89</p>
-</div></div></td>
-<td headers="stub_1_3 Total Spend" class="gt_row gt_center"><div data-qmd="₹115,151"><div class="gt_from_md"><p>₹115,151</p>
-</div></div></td></tr>
-    <tr><th id="stub_1_4" scope="row" class="gt_row gt_center gt_stub"><div data-qmd="Loktantrik"><div class="gt_from_md"><p>Loktantrik</p>
-</div></div></th>
-<td headers="stub_1_4 Number of Advertisers" class="gt_row gt_center" style="border-left-width: 18.5px; border-left-style: solid; border-left-color: #a03350;"><div data-qmd="6"><div class="gt_from_md"><p>6</p>
-</div></div></td>
-<td headers="stub_1_4 Top Spenders" class="gt_row gt_left" style="vertical-align:center"><div data-qmd="<br>1. [Udai Lal Dangi](https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=NL&amp;view_all_page_id=935230076683817) (₹40,327)<br>2. [Badri Lal Jat](https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=NL&amp;view_all_page_id=107786371407044) (₹25,510)<br>3. [Vijay Pal Singh](https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=NL&amp;view_all_page_id=581097272235320) (₹19,161)<br><br>"><div class="gt_from_md"><p><br>1. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=NL&amp;view_all_page_id=935230076683817">Udai Lal Dangi</a> (₹40,327)<br>2. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=NL&amp;view_all_page_id=107786371407044">Badri Lal Jat</a> (₹25,510)<br>3. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=NL&amp;view_all_page_id=581097272235320">Vijay Pal Singh</a> (₹19,161)<br><br></p>
-</div></div></td>
-<td headers="stub_1_4 Number of Ads" class="gt_row gt_center"><div data-qmd="212"><div class="gt_from_md"><p>212</p>
-</div></div></td>
-<td headers="stub_1_4 Total Spend" class="gt_row gt_center"><div data-qmd="₹113,642"><div class="gt_from_md"><p>₹113,642</p>
-</div></div></td></tr>
-    <tr><th id="stub_1_5" scope="row" class="gt_row gt_center gt_stub"><div data-qmd="AAP"><div class="gt_from_md"><p>AAP</p>
-</div></div></th>
-<td headers="stub_1_5 Number of Advertisers" class="gt_row gt_center" style="border-left-width: 18.5px; border-left-style: solid; border-left-color: #3672b1;"><div data-qmd="2"><div class="gt_from_md"><p>2</p>
-</div></div></td>
-<td headers="stub_1_5 Top Spenders" class="gt_row gt_left" style="vertical-align:center"><div data-qmd="<br>1. [Archit Gupta](https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=NL&amp;view_all_page_id=103891121744943) (₹95,474)<br>2. [AAP Sachin Kaushik](https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=NL&amp;view_all_page_id=108525568458223) (₹1,766)<br><br>"><div class="gt_from_md"><p><br>1. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=NL&amp;view_all_page_id=103891121744943">Archit Gupta</a> (₹95,474)<br>2. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=NL&amp;view_all_page_id=108525568458223">AAP Sachin Kaushik</a> (₹1,766)<br><br></p>
-</div></div></td>
-<td headers="stub_1_5 Number of Ads" class="gt_row gt_center"><div data-qmd="83"><div class="gt_from_md"><p>83</p>
-</div></div></td>
-<td headers="stub_1_5 Total Spend" class="gt_row gt_center"><div data-qmd="₹97,240"><div class="gt_from_md"><p>₹97,240</p>
-</div></div></td></tr>
-    <tr><th id="stub_1_6" scope="row" class="gt_row gt_center gt_stub"><div data-qmd="BSP"><div class="gt_from_md"><p>BSP</p>
-</div></div></th>
-<td headers="stub_1_6 Number of Advertisers" class="gt_row gt_center" style="border-left-width: 18.5px; border-left-style: solid; border-left-color: #6382ac;"><div data-qmd="3"><div class="gt_from_md"><p>3</p>
-</div></div></td>
-<td headers="stub_1_6 Top Spenders" class="gt_row gt_left" style="vertical-align:center"><div data-qmd="<br>1. [Ritesh Sharma](https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=NL&amp;view_all_page_id=616628545098948) (₹43,381)<br>2. [Manoj Ghumariya](https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=NL&amp;view_all_page_id=105617485464172) (₹1,585)<br>3. [Shakeel Khan Kaman](https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=NL&amp;view_all_page_id=103673315495075) (₹763)<br><br>"><div class="gt_from_md"><p><br>1. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=NL&amp;view_all_page_id=616628545098948">Ritesh Sharma</a> (₹43,381)<br>2. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=NL&amp;view_all_page_id=105617485464172">Manoj Ghumariya</a> (₹1,585)<br>3. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=NL&amp;view_all_page_id=103673315495075">Shakeel Khan Kaman</a> (₹763)<br><br></p>
-</div></div></td>
-<td headers="stub_1_6 Number of Ads" class="gt_row gt_center"><div data-qmd="134"><div class="gt_from_md"><p>134</p>
-</div></div></td>
-<td headers="stub_1_6 Total Spend" class="gt_row gt_center"><div data-qmd="₹45,729"><div class="gt_from_md"><p>₹45,729</p>
-</div></div></td></tr>
-    <tr><th id="stub_1_7" scope="row" class="gt_row gt_center gt_stub"><div data-qmd="Samaj"><div class="gt_from_md"><p>Samaj</p>
-</div></div></th>
-<td headers="stub_1_7 Number of Advertisers" class="gt_row gt_center" style="border-left-width: 18.5px; border-left-style: solid; border-left-color: #3382c0;"><div data-qmd="1"><div class="gt_from_md"><p>1</p>
-</div></div></td>
-<td headers="stub_1_7 Top Spenders" class="gt_row gt_left" style="vertical-align:center"><div data-qmd="<br>1. [Nallapati Ramu](https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=NL&amp;view_all_page_id=100696622444764) (₹4,552)<br><br>"><div class="gt_from_md"><p><br>1. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=NL&amp;view_all_page_id=100696622444764">Nallapati Ramu</a> (₹4,552)<br><br></p>
-</div></div></td>
-<td headers="stub_1_7 Number of Ads" class="gt_row gt_center"><div data-qmd="16"><div class="gt_from_md"><p>16</p>
-</div></div></td>
-<td headers="stub_1_7 Total Spend" class="gt_row gt_center"><div data-qmd="₹4,552"><div class="gt_from_md"><p>₹4,552</p>
-</div></div></td></tr>
-    <tr><th id="stub_1_8" scope="row" class="gt_row gt_center gt_stub"><div data-qmd="SS"><div class="gt_from_md"><p>SS</p>
-</div></div></th>
-<td headers="stub_1_8 Number of Advertisers" class="gt_row gt_center" style="border-left-width: 18.5px; border-left-style: solid; border-left-color: #3672bb;"><div data-qmd="1"><div class="gt_from_md"><p>1</p>
-</div></div></td>
-<td headers="stub_1_8 Top Spenders" class="gt_row gt_left" style="vertical-align:center"><div data-qmd="<br>1. [Eknath Shinde - एकनाथ संभाजी शिंदे](https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=NL&amp;view_all_page_id=421179061356837) (₹1,106)<br><br>"><div class="gt_from_md"><p><br>1. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=NL&amp;view_all_page_id=421179061356837">Eknath Shinde - एकनाथ संभाजी शिंदे</a> (₹1,106)<br><br></p>
-</div></div></td>
-<td headers="stub_1_8 Number of Ads" class="gt_row gt_center"><div data-qmd="1"><div class="gt_from_md"><p>1</p>
-</div></div></td>
-<td headers="stub_1_8 Total Spend" class="gt_row gt_center"><div data-qmd="₹1,106"><div class="gt_from_md"><p>₹1,106</p>
-</div></div></td></tr>
-    <tr><th id="stub_1_9" scope="row" class="gt_row gt_center gt_stub"><div data-qmd="Oth"><div class="gt_from_md"><p>Oth</p>
-</div></div></th>
-<td headers="stub_1_9 Number of Advertisers" class="gt_row gt_center" style="border-left-width: 18.5px; border-left-style: solid; border-left-color: #c1921e;"><div data-qmd="1"><div class="gt_from_md"><p>1</p>
-</div></div></td>
-<td headers="stub_1_9 Top Spenders" class="gt_row gt_left" style="vertical-align:center"><div data-qmd="<br>1. [The Chaupal](https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=NL&amp;view_all_page_id=526222491203445) (₹800)<br><br>"><div class="gt_from_md"><p><br>1. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=NL&amp;view_all_page_id=526222491203445">The Chaupal</a> (₹800)<br><br></p>
-</div></div></td>
-<td headers="stub_1_9 Number of Ads" class="gt_row gt_center"><div data-qmd="3"><div class="gt_from_md"><p>3</p>
-</div></div></td>
-<td headers="stub_1_9 Total Spend" class="gt_row gt_center"><div data-qmd="₹800"><div class="gt_from_md"><p>₹800</p>
-</div></div></td></tr>
-  </tbody>
-  
-  
+
+<table class="gt_table table table-sm table-striped small" data-quarto-postprocess="true" data-quarto-disable-processing="false" data-quarto-bootstrap="false">
+<colgroup>
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+</colgroup>
+<thead>
+<tr class="header gt_col_headings">
+<th class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" scope="col"></th>
+<th id="Number of Advertisers" class="gt_col_heading gt_columns_bottom_border gt_center" data-quarto-table-cell-role="th" style="border-top-width: 0px; border-top-style: solid; border-top-color: black; font-family: Chivo; font-size: 14px; vertical-align: bottom; font-weight: 200; text-transform: uppercase" scope="col">Number of Advertisers</th>
+<th id="Top Spenders" class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" style="border-top-width: 0px; border-top-style: solid; border-top-color: black; font-family: Chivo; font-size: 14px; vertical-align: bottom; font-weight: 200; text-transform: uppercase" scope="col">Top Spenders</th>
+<th id="Number of Ads" class="gt_col_heading gt_columns_bottom_border gt_center" data-quarto-table-cell-role="th" style="border-top-width: 0px; border-top-style: solid; border-top-color: black; font-family: Chivo; font-size: 14px; vertical-align: bottom; font-weight: 200; text-transform: uppercase" scope="col">Number of Ads</th>
+<th id="Total Spend" class="gt_col_heading gt_columns_bottom_border gt_center" data-quarto-table-cell-role="th" style="border-top-width: 0px; border-top-style: solid; border-top-color: black; font-family: Chivo; font-size: 14px; vertical-align: bottom; font-weight: 200; text-transform: uppercase" scope="col">Total Spend</th>
+</tr>
+</thead>
+<tbody class="gt_table_body">
+<tr class="odd">
+<td id="stub_1_1" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row"><p>BJP</p></td>
+<td class="gt_row gt_center" headers="stub_1_1 Number of Advertisers" style="border-left-width: 18.5px; border-left-style: solid; border-left-color: #278D27"><p>169</p></td>
+<td class="gt_row gt_left" headers="stub_1_1 Top Spenders" style="vertical-align: center"><p><br>1. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=NL&amp;view_all_page_id=639252199805894">Andela Sriramulu Yadav</a> (₹271,173)<br>2. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=NL&amp;view_all_page_id=261208307785338">Shatrughan Gautam</a> (₹182,512)<br>3. [Jai Aahuja जय आहूजा</p></td>
+<td class="gt_row gt_center" headers="stub_1_1 Number of Ads"><p>5,054</p></td>
+<td class="gt_row gt_center" headers="stub_1_1 Total Spend"><p>₹2,360,340</p></td>
+</tr>
+<tr class="even">
+<td id="stub_1_2" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row"><p>INC</p></td>
+<td class="gt_row gt_center" headers="stub_1_2 Number of Advertisers" style="border-left-width: 18.5px; border-left-style: solid; border-left-color: #EE5A1C"><p>114</p></td>
+<td class="gt_row gt_left" headers="stub_1_2 Top Spenders" style="vertical-align: center"><p><br>1. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=NL&amp;view_all_page_id=117221101343678">Kharge Fan Club</a> (₹520,484)<br>2. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=NL&amp;view_all_page_id=108080828884036">Gehlot Phir Se</a> (₹226,272)<br>3. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=NL&amp;view_all_page_id=306533526129048">Abhishek Choudhary</a> (₹117,457)<br><br></p></td>
+<td class="gt_row gt_center" headers="stub_1_2 Number of Ads"><p>3,220</p></td>
+<td class="gt_row gt_center" headers="stub_1_2 Total Spend"><p>₹2,292,035</p></td>
+</tr>
+<tr class="odd">
+<td id="stub_1_3" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row"><p>Gov</p></td>
+<td class="gt_row gt_center" headers="stub_1_3 Number of Advertisers" style="border-left-width: 18.5px; border-left-style: solid; border-left-color: #792061"><p>5</p></td>
+<td class="gt_row gt_left" headers="stub_1_3 Top Spenders" style="vertical-align: center"><p><br>1. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=NL&amp;view_all_page_id=132495066874513">GAIL (India) Limited</a> (₹83,120)<br>2. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=NL&amp;view_all_page_id=108529574059980">PMFBY</a> (₹23,095)<br>3. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=NL&amp;view_all_page_id=129102672254175">PM SVANidhi</a> (₹5,742)<br><br></p></td>
+<td class="gt_row gt_center" headers="stub_1_3 Number of Ads"><p>89</p></td>
+<td class="gt_row gt_center" headers="stub_1_3 Total Spend"><p>₹115,151</p></td>
+</tr>
+<tr class="even">
+<td id="stub_1_4" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row"><p>Loktantrik</p></td>
+<td class="gt_row gt_center" headers="stub_1_4 Number of Advertisers" style="border-left-width: 18.5px; border-left-style: solid; border-left-color: #a03350"><p>6</p></td>
+<td class="gt_row gt_left" headers="stub_1_4 Top Spenders" style="vertical-align: center"><p><br>1. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=NL&amp;view_all_page_id=935230076683817">Udai Lal Dangi</a> (₹40,327)<br>2. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=NL&amp;view_all_page_id=107786371407044">Badri Lal Jat</a> (₹25,510)<br>3. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=NL&amp;view_all_page_id=581097272235320">Vijay Pal Singh</a> (₹19,161)<br><br></p></td>
+<td class="gt_row gt_center" headers="stub_1_4 Number of Ads"><p>212</p></td>
+<td class="gt_row gt_center" headers="stub_1_4 Total Spend"><p>₹113,642</p></td>
+</tr>
+<tr class="odd">
+<td id="stub_1_5" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row"><p>AAP</p></td>
+<td class="gt_row gt_center" headers="stub_1_5 Number of Advertisers" style="border-left-width: 18.5px; border-left-style: solid; border-left-color: #3672b1"><p>2</p></td>
+<td class="gt_row gt_left" headers="stub_1_5 Top Spenders" style="vertical-align: center"><p><br>1. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=NL&amp;view_all_page_id=103891121744943">Archit Gupta</a> (₹95,474)<br>2. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=NL&amp;view_all_page_id=108525568458223">AAP Sachin Kaushik</a> (₹1,766)<br><br></p></td>
+<td class="gt_row gt_center" headers="stub_1_5 Number of Ads"><p>83</p></td>
+<td class="gt_row gt_center" headers="stub_1_5 Total Spend"><p>₹97,240</p></td>
+</tr>
+<tr class="even">
+<td id="stub_1_6" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row"><p>BSP</p></td>
+<td class="gt_row gt_center" headers="stub_1_6 Number of Advertisers" style="border-left-width: 18.5px; border-left-style: solid; border-left-color: #6382ac"><p>3</p></td>
+<td class="gt_row gt_left" headers="stub_1_6 Top Spenders" style="vertical-align: center"><p><br>1. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=NL&amp;view_all_page_id=616628545098948">Ritesh Sharma</a> (₹43,381)<br>2. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=NL&amp;view_all_page_id=105617485464172">Manoj Ghumariya</a> (₹1,585)<br>3. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=NL&amp;view_all_page_id=103673315495075">Shakeel Khan Kaman</a> (₹763)<br><br></p></td>
+<td class="gt_row gt_center" headers="stub_1_6 Number of Ads"><p>134</p></td>
+<td class="gt_row gt_center" headers="stub_1_6 Total Spend"><p>₹45,729</p></td>
+</tr>
+<tr class="odd">
+<td id="stub_1_7" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row"><p>Samaj</p></td>
+<td class="gt_row gt_center" headers="stub_1_7 Number of Advertisers" style="border-left-width: 18.5px; border-left-style: solid; border-left-color: #3382c0"><p>1</p></td>
+<td class="gt_row gt_left" headers="stub_1_7 Top Spenders" style="vertical-align: center"><p><br>1. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=NL&amp;view_all_page_id=100696622444764">Nallapati Ramu</a> (₹4,552)<br><br></p></td>
+<td class="gt_row gt_center" headers="stub_1_7 Number of Ads"><p>16</p></td>
+<td class="gt_row gt_center" headers="stub_1_7 Total Spend"><p>₹4,552</p></td>
+</tr>
+<tr class="even">
+<td id="stub_1_8" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row"><p>SS</p></td>
+<td class="gt_row gt_center" headers="stub_1_8 Number of Advertisers" style="border-left-width: 18.5px; border-left-style: solid; border-left-color: #3672bb"><p>1</p></td>
+<td class="gt_row gt_left" headers="stub_1_8 Top Spenders" style="vertical-align: center"><p><br>1. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=NL&amp;view_all_page_id=421179061356837">Eknath Shinde - एकनाथ संभाजी शिंदे</a> (₹1,106)<br><br></p></td>
+<td class="gt_row gt_center" headers="stub_1_8 Number of Ads"><p>1</p></td>
+<td class="gt_row gt_center" headers="stub_1_8 Total Spend"><p>₹1,106</p></td>
+</tr>
+<tr class="odd">
+<td id="stub_1_9" class="gt_row gt_center gt_stub" data-quarto-table-cell-role="th" scope="row"><p>Oth</p></td>
+<td class="gt_row gt_center" headers="stub_1_9 Number of Advertisers" style="border-left-width: 18.5px; border-left-style: solid; border-left-color: #c1921e"><p>1</p></td>
+<td class="gt_row gt_left" headers="stub_1_9 Top Spenders" style="vertical-align: center"><p><br>1. <a href="https://www.facebook.com/ads/library/?ad_type=political_and_issue_ads&amp;country=NL&amp;view_all_page_id=526222491203445">The Chaupal</a> (₹800)<br><br></p></td>
+<td class="gt_row gt_center" headers="stub_1_9 Number of Ads"><p>3</p></td>
+<td class="gt_row gt_center" headers="stub_1_9 Total Spend"><p>₹800</p></td>
+</tr>
+</tbody>
 </table>
+
 </div>
 </div>
 </div>
@@ -1378,10 +1342,9 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     // clear code selection
     e.clearSelection();
   });
-  function tippyHover(el, contentFn) {
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
     const config = {
       allowHTML: true,
-      content: contentFn,
       maxWidth: 500,
       delay: 100,
       arrow: false,
@@ -1391,8 +1354,17 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       interactive: true,
       interactiveBorder: 10,
       theme: 'quarto',
-      placement: 'bottom-start'
+      placement: 'bottom-start',
     };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
     window.tippy(el, config); 
   }
   const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
@@ -1405,6 +1377,125 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
       return note.innerHTML;
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
     });
   }
       let selectedAnnoteEl;
@@ -1448,6 +1539,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
             }
             div.style.top = top - 2 + "px";
             div.style.height = height + 4 + "px";
+            div.style.left = 0;
             let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
             if (gutterDiv === null) {
               gutterDiv = window.document.createElement("div");
@@ -1473,6 +1565,32 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         });
         selectedAnnoteEl = undefined;
       };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
       // Attach click handler to the DT
       const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
       for (const annoteDlNode of annoteDls) {
@@ -1533,6 +1651,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 });
 </script>
 </div> <!-- /content -->
+
 
 
 
